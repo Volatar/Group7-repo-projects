@@ -1,0 +1,10 @@
+Documentation Team
+	Selinium Lab class diagram
+
+
+Coding Team
+	Be ready to begin work the moment the documentation team produces anything.
+
+
+Testing Team
+	Look over Selinium Lab info and start deciding on tests you might want.

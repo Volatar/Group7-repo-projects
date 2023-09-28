@@ -1,5 +1,8 @@
 Group Roles
 
+Project Manager
+Taylor Sanderson
+
 Coder (3)
 Davis Lingle
 
@@ -8,7 +11,7 @@ Davis Lingle
 Documentation (3)
 Wendy Ceja-Huerta
 Caleb Ashton Luce
-
+Robert Francis Angodung
 
 Tester (2)
 Jason Lee
