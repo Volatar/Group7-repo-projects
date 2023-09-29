@@ -2,7 +2,7 @@ Group Project Meeting agenda
 
 Tasks:
 Introductions are due on the 4th on Teams
-	- 2/9 have done this
+	- 3/9 have done this
 1st Peer evaluations are due on the 4th on Blackboard
 Establish Readme.md on Github
 	- in progress, GET ME YOUR GITHUB USERNAMES
@@ -15,6 +15,7 @@ Initial Code and Documentation for Selinium Lab
 
 Discussion:
 Go over project document
+Create readme.md
 Roles of each member in the project
 Schedule
 Initial Code and Documentation for Selinium Lab

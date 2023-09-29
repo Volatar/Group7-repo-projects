@@ -1,6 +1,8 @@
 Documentation Team
-	Selinium Lab class diagram
-
+	Selinium Lab 
+		class diagram
+		sequence diagram
+		
 
 Coding Team
 	Be ready to begin work the moment the documentation team produces anything.
