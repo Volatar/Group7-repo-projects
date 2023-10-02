@@ -6,7 +6,7 @@ Taylor Sanderson
 Coder (3)
 Davis Lingle
 Navya Bade
-
+Alexi McNabb
 
 Documentation (3)
 Wendy Ceja-Huerta
@@ -15,3 +15,4 @@ Robert Francis Angodung
 
 Tester (2)
 Jason Lee
+Efrain Ceniza

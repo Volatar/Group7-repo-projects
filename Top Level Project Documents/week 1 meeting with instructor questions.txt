@@ -1,0 +1,6 @@
+Questions to ask instructor tonight
+
+How many/what documents do we need for the first two labs?
+What should a readme.md look like?
+How should we do evals for sprint 1?
+What does she think about the schedule laid out?

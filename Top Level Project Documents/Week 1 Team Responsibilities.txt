@@ -1,11 +1,11 @@
 Documentation Team
 	Selinium Lab 
-		class diagram
-		sequence diagram
-		
+		Class Diagram		Robert
+		Sequence Diagram	Wendy
+		Test Setup Report	Caleb
 
 Coding Team
-	Be ready to begin work the moment the documentation team produces anything.
+	Start coding for Selinium lab, split up responsibilities among yourselves by strengths.
 
 
 Testing Team
