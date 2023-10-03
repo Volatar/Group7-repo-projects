@@ -1,12 +1,5 @@
-Documentation Team
-	Selinium Lab 
-		Class Diagram		Robert
-		Sequence Diagram	Wendy
-		Test Setup Report	Caleb
+ALL
 
-Coding Team
-	Start coding for Selinium lab, split up responsibilities among yourselves by strengths.
-
-
-Testing Team
-	Look over Selinium Lab info and start deciding on tests you might want.
+Selinium Lab Research
+Readme.md
+TBD
