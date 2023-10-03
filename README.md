@@ -9,7 +9,7 @@ This is a collection of labs for teaching, made as a group project for Wake Tech
 - Behavior Driven Development
 - Application Programming Interfaces
 - Test Driven Development
-- one more TBD
+- one more which is TBD
 
 # Mobdules
 
@@ -18,12 +18,12 @@ This is a collection of labs for teaching, made as a group project for Wake Tech
 # Tests
 
 # Contributors 
-Robert Francis Angodung
-Navya Bade
-Wendy Ceja-Huerta
-Efrain Ceniza
-Jason Lee
-Davis Lingle
-Caleb Luce
-Alexi McNabb
-Taylor Sanderson
+- Robert Francis Angodung
+- Navya Bade
+- Wendy Ceja-Huerta
+- Efrain Ceniza
+- Jason Lee
+- Davis Lingle
+- Caleb Luce
+- Alexi McNabb
+- Taylor Sanderson
