@@ -1,6 +1,25 @@
 Questions to ask instructor tonight
 
 How many/what documents do we need for the first two labs?
+	Coders make the web app that will be used for the lab.
+	Documentation is the lab that uses the code, step by step just like a school lab.
+	Documentation is any guidance and tutorials that we have to give someone who is learning the lab.
+	Use mermaid.live to make code based flowcharts that work on github
+		We gotta figure out how to get the mermaid stuff into markdown onto github
+		There is a VS Code plugin for this tool
+	Testers test the web app to make sure it works.
+	Testers actually do the lab and find mistakes.
+	Testers make bug reports that coders then use to fix app.
 What should a readme.md look like?
+	Features
+	Modules overview
+	Dependancies (requirements.txt)
+	Tests directory structure
+	Flow of application
 How should we do evals for sprint 1?
+	We have quite a bit to go on already.
+		Contribution in meetings
+		Contribution on teams
+	5's or 1's on eval require additional information to be provided
 What does she think about the schedule laid out?
+	Taylor is going to rewrite the whole schedule
