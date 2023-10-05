@@ -1,0 +1,11 @@
+Week 1 midweek meeting notes:
+
+Our example app is going to be a Blockbuster Video Rental system, a relic of the 90s in the modern day.
+
+Caleb Ashton Luce is going to handle the mermaid.live stuff. He is going to start research now into how to use that well, and then document the example app when it is put together.
+
+Davis Lingle is going to start coding the example app this weekend and portion out what he can to the other two coders. He doesn't think it'll take a week and a half so we can get started on the next step sooner than I expected.
+
+Robert Francis Angodung is going to begin work on the pre-example parts of the lab: the intro to the DOM and Selinium (what it is, not what it does), and have something by Monday (I don't really expect the whole thing by then but something). Caleb Ashton Luce plans to help him.
+
+Navya Bade, Wendy Ceja-Huerta, and Efrain Ceniza, I want some research material from y'all to help us out so you can get credit for working this week. Anything that hasn't been presented could be helpful. If you can't find anything new on Selinium or Flask present something on Behavior Driven Development, which will be our second lab.

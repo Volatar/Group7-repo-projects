@@ -1,21 +1,21 @@
 Provided resarch material
-Robert Francis Angodung	
-Navya Bade				
-Wendy Ceja-Huerta		
-Efrain Ceniza			
+Robert Francis Angodung	no
+Navya Bade				no
+Wendy Ceja-Huerta		no
+Efrain Ceniza			no
 Jason Lee				yes
 Davis Lingle			yes
-Caleb Luce				
+Caleb Luce				no
 Alexi McNabb			yes
 Taylor Sanderson		yes
 
 Attended group meeting
-Robert Francis Angodung	
-Navya Bade				
-Wendy Ceja-Huerta		
-Efrain Ceniza			
-Jason Lee				
-Davis Lingle			
-Caleb Luce				
-Alexi McNabb			excused
+Robert Francis Angodung	yes
+Navya Bade				yes
+Wendy Ceja-Huerta		no
+Efrain Ceniza			yes
+Jason Lee				yes
+Davis Lingle			yes
+Caleb Luce				yes
+Alexi McNabb			yes
 Taylor Sanderson		yes
