@@ -3,7 +3,7 @@ Questions to ask instructor tonight
 How many/what documents do we need for the first two labs?
 	Coders make the web app that will be used for the lab.
 	Documentation is the lab that uses the code, step by step just like a school lab.
-	Documentation is any guidance and tutorials that we have to give someone who is learning the lab.
+		Documentation is any guidance and tutorials that we have to give someone who is learning the lab.
 	Use mermaid.live to make code based flowcharts that work on github
 		We gotta figure out how to get the mermaid stuff into markdown onto github
 		There is a VS Code plugin for this tool

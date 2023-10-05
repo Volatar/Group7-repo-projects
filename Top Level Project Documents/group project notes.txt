@@ -1,20 +1,11 @@
 Group Project Meeting agenda
 
 Tasks:
-Introductions are due on the 4th on Teams
-	- 5/9 have done this
-1st Peer evaluations are due on the 4th on Blackboard
-Establish Readme.md on Github
-	- in progress, GET ME YOUR GITHUB USERNAMES
 Establish tentative schedule
-	- we need to do this at the group meeting Monday 
-Attend 1st status review with instructor 8pm
 Initial Code and Documentation for Selinium Lab
-	- This needs to be started right away
+Hear from everyone about what research they have found
+
 
 Discussion:
-Go over project document
-Create readme.md
-Roles of each member in the project
+Selinium Lab Research results
 Schedule
-Initial Code and Documentation for Selinium Lab
