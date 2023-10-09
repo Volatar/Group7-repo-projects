@@ -1,11 +1,19 @@
 Group Project Meeting agenda
 
 Tasks:
-Establish tentative schedule
-Initial Code and Documentation for Selinium Lab
-Hear from everyone about what research they have found
+Get help for first lab coding (HTML seperate?)
+
 
 
 Discussion:
-Selinium Lab Research results
-Schedule
+Report from Davis
+How to vet AI generated text
+Gotta use Github more
+What has Caleb found
+
+What people are doing:
+Jason will put together a movie python dictionary with some data from imdb
+Davis will put together flask programming for the website
+Navya will do HTML for the website
+Caleb will put together a diagram of the DOM
+Robert will check facts on his documentation
