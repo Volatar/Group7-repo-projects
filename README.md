@@ -11,7 +11,7 @@ This is a collection of labs for teaching, made as a group project for Wake Tech
 - Test Driven Development
 - one more which is TBD
 
-# Mobdules
+# Modules
 
 # Dependancies
 
