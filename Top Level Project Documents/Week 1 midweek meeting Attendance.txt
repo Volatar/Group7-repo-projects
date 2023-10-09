@@ -1,8 +1,8 @@
 Provided resarch material
 Robert Francis Angodung	no
 Navya Bade				yes
-Wendy Ceja-Huerta		no
-Efrain Ceniza			no
+Wendy Ceja-Huerta		yes
+Efrain Ceniza			yes
 Jason Lee				yes
 Davis Lingle			yes
 Caleb Luce				no
