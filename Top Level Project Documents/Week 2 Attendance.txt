@@ -17,5 +17,5 @@ Efrain Ceniza				yes
 Jason Lee					yes
 Davis Lingle				yes
 Caleb Luce					yes
-Alexi McNabb				
+Alexi McNabb				no
 Taylor Sanderson			yes
