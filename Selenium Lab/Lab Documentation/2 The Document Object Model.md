@@ -5,8 +5,7 @@ The DOM provides a hierarchical representation of the HTML or XML document, with
 
 By using the DOM, developers can easily interact with HTML elements and modify their properties, such as changing text, colors, or styles dynamically.
 The HTML DOM provides a way to interact with and manipulate the elements of an HTML document using JavaScript. 
-It allows you to access, modify, and add elements dynamically, change styles and classes, handle events, and perform other operations on the document. [source]
-(https://www.freecodecamp.org/news/manipulate-html-and-css-using-javascript/)
+It allows you to access, modify, and add elements dynamically, change styles and classes, handle events, and perform other operations on the document. [source](https://www.freecodecamp.org/news/manipulate-html-and-css-using-javascript/)
 
 The DOM also enables the creation of new elements, To create a new element, we can use document.createElement() with the argument of element, which is the element name. 
 However, it does not append it to the document. It creates an empty element with no inner HTML. [source](https://medium.com/@fernnandoptr/dom-manipulation-in-a-nutshell-76c8b7eb3f1c#8b3a)
