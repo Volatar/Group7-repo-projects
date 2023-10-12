@@ -1,27 +1,19 @@
 Group Project Meeting agenda
 
 Tasks:
-Maybe split webpage into it's individual pages and give that to several people
-Home			Navya
-Search			Jason
-Cart			Alexi
-Payment			Efrain
-About/Contact	Wendy
-
-CSS				Navya
-
-Additional tasks:
-review Selenium documentation	Davis
-review DOM diagram				Robert
-AI generated movie covers		Taylor
+Begin tutorial writing
 
 Discussion:
 Report from each person
 
 
 What people are doing from last meeting:
-Jason will put together a movie python dictionary with some data from imdb
-Davis will put together flask programming for the website
-Navya will do HTML for the website
-Caleb will put together a diagram of the DOM
-Robert will check facts on his documentation
+Home							Navya
+Search							Jason
+Cart							Alexi
+Payment							Efrain
+About/Contact					Wendy
+CSS								Navya
+review Selenium documentation	Davis
+review DOM diagram				Robert
+AI generated movie covers		Taylor
