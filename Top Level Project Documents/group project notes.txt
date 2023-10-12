@@ -1,15 +1,19 @@
 Group Project Meeting agenda
 
 Tasks:
-Get help for first lab coding (HTML seperate?)
+Maybe split webpage into it's individual pages and give that to several people
+Home
+Search
+Cart
+Payment
+About/Contact
+CSS
 
 
 
 Discussion:
-Report from Davis
-How to vet AI generated text
-Gotta use Github more
-What has Caleb found
+Report from each person
+
 
 What people are doing:
 Jason will put together a movie python dictionary with some data from imdb
