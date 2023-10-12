@@ -12,7 +12,7 @@ The DOM also enables the creation of new elements, To create a new element, we c
 However, it does not append it to the document. It creates an empty element with no inner HTML.
 https://medium.com/@fernnandoptr/dom-manipulation-in-a-nutshell-76c8b7eb3f1c#:~:text=asquerySelector().-,Adding%20Elements,the%20document.%20It%20creates%20an%20empty%20element%20with%20no%20inner%20HTML.,-In%20order%20to
 
-##The main advantages of the DOM 
+## The main advantages of the DOM 
 - Data persists in memory
 - You can go forwards and backwards in the tree (random access)
 - You can make changes directly to the tree in memory
