@@ -3,15 +3,16 @@ Group Project Meeting agenda
 Tasks:
 Maybe split webpage into it's individual pages and give that to several people
 Home			Navya
-Search			
-Cart			
-Payment			
-About/Contact	
-CSS				
+Search			Jason
+Cart			Alexi
+Payment			Efrain
+About/Contact	Wendy
+
+CSS				Navya
 
 Additional tasks:
-review Selenium documentation	
-review DOM diagram				
+review Selenium documentation	Davis
+review DOM diagram				Robert
 AI generated movie covers		Taylor
 
 Discussion:
