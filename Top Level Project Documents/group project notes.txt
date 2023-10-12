@@ -6,8 +6,8 @@ Home
 Search
 Cart
 Payment
-About
-Contact
+About/Contact
+
 
 
 Discussion:
