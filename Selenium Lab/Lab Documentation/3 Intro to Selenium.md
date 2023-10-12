@@ -1,3 +1,5 @@
+# Intro to Selenium
+
 Selenium is a popular software tool used for automated web testing. It allows developers and testers to create scripts that can interact with web browsers, mimicking human actions and validating the functionality of web applications.
 
 This summary aims to provide a comprehensive understanding of Selenium and its significance in software development. Selenium is an open-source framework that supports multiple programming languages, making it accessible to a wide range of developers. With its various components like Selenium WebDriver, Selenium IDE, and Selenium Grid, this robust tool offers flexibility and scalability in automating web testing across different browsers and platforms.
