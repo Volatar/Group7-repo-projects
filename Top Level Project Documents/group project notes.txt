@@ -2,7 +2,7 @@ Group Project Meeting agenda
 
 Tasks:
 Maybe split webpage into it's individual pages and give that to several people
-Home			
+Home			Navya
 Search			
 Cart			
 Payment			
@@ -12,7 +12,7 @@ CSS
 Additional tasks:
 review Selenium documentation	
 review DOM diagram				
-
+AI generated movie covers		Taylor
 
 Discussion:
 Report from each person
