@@ -3,8 +3,8 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 movies = {
-    'A': 'Alien vs Shrek',
-    'B': 'Bringing Bubba Back',
+    'A': 'Alien vs Ogre',
+    'B': 'Back to the Present',
     'C': 'Casino Royale with Cheese',
     'D': 'The Dark Night',
     'E': 'Elven',
@@ -27,7 +27,7 @@ movies = {
     'V': 'V for Venom',
     'W': 'The Wizard of Oz 2: Tornado Alley',
     'X': 'Xtreme Wormhole Adventure',
-    'Y': 'Y-men: The Search for Shrek',
+    'Y': "You've Got Junk Mail",
     'Z': 'Zootedtopia'
 }
 
