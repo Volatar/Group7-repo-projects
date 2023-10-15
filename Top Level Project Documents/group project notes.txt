@@ -1,11 +1,19 @@
 Group Project Meeting agenda
 
 Tasks:
-Establish tentative schedule
-Initial Code and Documentation for Selinium Lab
-Hear from everyone about what research they have found
-
+Begin tutorial writing
 
 Discussion:
-Selinium Lab Research results
-Schedule
+Report from each person
+
+
+What people are doing from last meeting:
+Home							Navya
+Search							Jason
+Cart							Alexi
+Payment							Efrain
+About/Contact					Wendy
+CSS								Navya
+review Selenium documentation	Davis
+review DOM diagram				Robert
+AI generated movie covers		Taylor
