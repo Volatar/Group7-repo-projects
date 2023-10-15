@@ -5,8 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fec6550-8295-4202-9741-3f5d5466e2de" name="Changes" comment="Rename template directory to templates and rename homepage to home.html">
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/I.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/g.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/j.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/k.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/n.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/o.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/p.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/q.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/t.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/u.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/v.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/w.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Selenium Lab/website/images/z.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Selenium Lab/website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium Lab/website/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Selenium Lab/movies.py" beforeDir="false" afterPath="$PROJECT_DIR$/Selenium Lab/movies.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +138,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rename template directory to templates and rename homepage to home.html" />
