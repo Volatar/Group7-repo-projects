@@ -8,7 +8,7 @@ def home():
 
 @views.route('/search')
 def search():
-    return "<p>Search</p>"
+    return render_template("search.html")
 
 @views.route('/cart')
 def cart():
