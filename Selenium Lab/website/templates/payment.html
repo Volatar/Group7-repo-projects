@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mockbuster Payment</title>
+   
+</head>
+<body>
+    <h1>Mockbuster Payment</h1>
+
+    <div id="cart">
+        <!-- Display the list of videos from the POST request -->
+    </div>
+	
+    <p>Total Number of Videos: <span id="totalVideos">0</span></p>
+    <p>Total Cost for 3 Days: <span id="totalCost">$0.00</span></p>
+	<p id="price"></p>
+	<button id="confirm-button">OK</button>
+	
+	<script>
+        // total price and confirmation
+
+        const videoPrices = {
+            // prices for each video
+            video1: 3.00,
+            video2: 4.00,
+        };
+
+        const cartList = document.querySelectorAll('#cart ul li');
+        let totalPrice = 0;
+
+        // Calculate the total price
+        cartList.forEach(item => {
+            const videoId = item.textContent.trim();
+            totalPrice += videoPrices[videoId];
+        });
+
+        // Display the total price
+        const priceElement = document.getElementById('price');
+        priceElement.textContent = `$${(totalPrice * 3).toFixed(2)}`;
+
+        // Handle user confirmation
+        const confirmButton = document.getElementById('confirm-button');
+        confirmButton.addEventListener('click', () => {
+            const confirmation = confirm(`Total Price: $${(totalPrice * 3).toFixed(2)}\n\nIs this OK?`);
+            if (confirmation) {
+                // Redirect to the home page or perform other actions
+                window.location.href = 'home.html'; // Change the URL to your home page
+            }
+        });
+    </script>
+</html>
