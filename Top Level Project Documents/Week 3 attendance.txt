@@ -1,12 +1,12 @@
 Contributed since last monday meeting
 Robert Francis Angodung		yes
 Navya Bade					yes
-Wendy Ceja-Huerta			
-Efrain Ceniza				
+Wendy Ceja-Huerta			yes
+Efrain Ceniza				no
 Jason Lee					yes
 Davis Lingle				yes
 Caleb Luce					yes
-Alexi McNabb				
+Alexi McNabb				yes
 Taylor Sanderson			yes
 
 Attended group meeting
@@ -14,7 +14,7 @@ Robert Francis Angodung
 Navya Bade					excused
 Wendy Ceja-Huerta			
 Efrain Ceniza				
-Jason Lee					
+Jason Lee					expected late
 Davis Lingle				
 Caleb Luce					
 Alexi McNabb				

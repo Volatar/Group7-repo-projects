@@ -8,12 +8,12 @@ Report from each person
 
 
 What people are doing from last meeting:
-Home							Navya
-Search							Jason
-Cart							Alexi
-Payment							Efrain
-About/Contact					Wendy
-CSS								Navya
-review Selenium documentation	Davis
-review DOM diagram				Robert
-AI generated movie covers		Taylor
+Home							Navya		done
+Search							Jason		???
+Cart							Alexi		???
+Payment							Efrain		???
+About/Contact					Wendy		???
+CSS								Navya		broken, looks like it needs relative pathing
+review Selenium documentation	Davis		done
+review DOM diagram				Robert		???
+AI generated movie covers		Taylor		done, still refining
