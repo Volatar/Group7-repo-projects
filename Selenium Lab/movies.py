@@ -32,7 +32,7 @@ movies = {
 }
 
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/search", methods=["GET", "POST"])
 def movie_search():
     result = ""
 
@@ -50,5 +50,5 @@ def movie_search():
     return render_template("search.html", result=result)
 
 
-if __name__ == "__main__":
+if __name__ == "search":
     app.run(debug=True)
