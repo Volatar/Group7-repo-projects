@@ -32,7 +32,7 @@ movies = {
 }
 
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/search", methods=["GET", "POST"])
 def movie_search():
     result = ""
 
@@ -48,7 +48,3 @@ def movie_search():
             result = 'No movies found for the letter "{}".'.format(user_input)
 
     return render_template("search.html", result=result)
-
-
-if __name__ == "__main__":
-    app.run(debug=True)

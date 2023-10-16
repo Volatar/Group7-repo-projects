@@ -9,11 +9,20 @@ Report from each person
 
 What people are doing from last meeting:
 Home							Navya		done
-Search							Jason		???
+Search							Jason		minor work done
 Cart							Alexi		???
-Payment							Efrain		???
+Payment							Efrain		Code done
 About/Contact					Wendy		???
-CSS								Navya		broken, looks like it needs relative pathing
+CSS								Navya		done
 review Selenium documentation	Davis		done
-review DOM diagram				Robert		???
+review DOM diagram				Robert		says it looks good, had it checked by a professional as well
 AI generated movie covers		Taylor		done, still refining
+
+What people are doing for Thursday
+Install and setup instructions for web app 				Davis
+Impliment Jenga HTML via python for all pages			Davis
+Get a headstart on Selenium								Davis
+Search - add to cart (POST) function					Jason
+Cart													Alexi
+Figure out what diagram to use for explaining ...this	Caleb
+Get payment working with post from cart					Efrain
