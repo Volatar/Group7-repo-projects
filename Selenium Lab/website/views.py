@@ -12,7 +12,7 @@ def search():
 
 @views.route('/cart')
 def cart():
-    return "<p>Cart</p>"
+    return render_template("cart.html")
 
 @views.route('/payment')
 def payment():
