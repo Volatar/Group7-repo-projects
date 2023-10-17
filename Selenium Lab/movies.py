@@ -25,10 +25,10 @@ movies = {
     'T': 'T for Timeloop',
     'U': 'Up Again',
     'V': 'V for Venom',
-    'W': 'The Wizard of Oz 2: Tornado Alley',
+    'W': 'Website Story',
     'X': 'Xtreme Wormhole Adventure',
     'Y': "You've Got Junk Mail",
-    'Z': 'Zootedtopia'
+    'Z': 'Zoolando'
 }
 
 
