@@ -78,10 +78,10 @@
     </form>
     <div>
         <p>{{ result }}</p>
-        <form method="post" action="cart.html">
-            <input type="hidden" name="movie" value="movie">
-            <input type="submit" value="Add to Cart">
-        </form>
+    <form method="post" action="/add_to_cart">
+        <input type="hidden" name="movie" value="{{ result }}">
+        <input type="submit" value="Add to Cart">
+    </form>
     </div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session, redirect, url_for
 
 app = Flask(__name__)
 
@@ -35,7 +35,6 @@ movies = {
 @app.route("/search", methods=["GET", "POST"])
 def movie_search():
     result = ""
-
     if request.method == "POST":
         user_input = request.form["user_input"]
         user_input = user_input.upper()
@@ -43,8 +42,27 @@ def movie_search():
         if user_input == "QUIT":
             result = "You have quit the search."
         elif user_input in movies:
-            result = ", ".join(movies[user_input])
+            result = movies[user_input]
         else:
             result = 'No movies found for the letter "{}".'.format(user_input)
 
     return render_template("search.html", result=result)
+
+@app.route("/add_to_cart", methods=["POST"])
+def add_to_cart():
+    movie = request.form.get("movie")
+    if 'cart' not in session:
+        session['cart'] = []
+
+    if movie and movie in movies:
+        session['cart'].append(movies[movie])
+
+    return redirect(url_for('movie_search'))
+
+@app.route("/cart")
+def view_cart():
+    cart = session.get('cart', [])
+    return render_template("cart.html", cart=cart)
+
+if __name__ == '__main__':
+    app.run(debug=True)
