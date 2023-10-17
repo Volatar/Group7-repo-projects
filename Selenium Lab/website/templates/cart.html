@@ -23,6 +23,11 @@
     <main>
         <h2>Your Cart</h2>
         <p>This is where the movies will go</p>
+        <ul>
+            {% for movie in cart %}
+                <li>{{ movie }}</li>
+            {% endfor %}
+        </ul>
         <a href="payment.html">Finish and Pay</a>
     </main>
 
