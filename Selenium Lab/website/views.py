@@ -16,11 +16,11 @@ def cart():
 
 @views.route('/payment')
 def payment():
-    return "<p>Payment</p>"
+    return render_template("payment.html")
 
 @views.route('/about')
 def about():
-    return "<p>About</p>"
+    return render_template("about.html")
 
 @views.route('/contact')
 def contact():
