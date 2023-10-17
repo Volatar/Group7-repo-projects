@@ -64,5 +64,4 @@ def view_cart():
     cart = session.get('cart', [])
     return render_template("cart.html", cart=cart)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
