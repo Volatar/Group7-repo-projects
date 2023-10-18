@@ -67,3 +67,15 @@ def view_cart():
     return render_template("cart.html", cart=session['cart'])
 
 
+@movie.route("/delete_item", methods=['POST'])
+def remove_item():
+    edit_cart = session['cart']
+    edit_cart.remove(request.form.get("movie"))
+    session['cart'] = edit_cart
+    return render_template("cart.html", cart=session['cart'])
+
+
+@movie.route("/empty_cart", methods=['POST'])
+def empty_cart():
+    session['cart'] = []
+    return render_template("cart.html", cart=session['cart'])

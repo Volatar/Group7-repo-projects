@@ -26,13 +26,24 @@
         <br />
         <ul>
             {% for movie in cart %}
-                <li>{{ movie }}</li>
+                <li>{{ movie }}
+                <form method="post" action="/delete_item">
+                    <input type="hidden" name="movie" value="{{ movie }}">
+                    <input type="submit" value="Remove {{ movie }} from cart">
+                </form>
+                </li>
             {% endfor %}
         </ul>
+        <br />
+        {% if cart != [] %}
+        <form method="post" action="/empty_cart">
+            <input type="submit" value="Empty cart">
+        </form>
         <form method="post" action="/payment">
             <input type="hidden" value="{{ cart }}">
             <input type="submit" value="Finish and Pay">
         </form>
+        {% endif %}
     </main>
 
     <footer>
