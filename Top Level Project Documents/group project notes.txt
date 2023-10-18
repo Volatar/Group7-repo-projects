@@ -26,3 +26,4 @@ Search - add to cart (POST) function					Jason
 Cart													Alexi
 Figure out what diagram to use for explaining ...this	Caleb
 Get payment working with post from cart					Efrain
+Adding image code to search and cart					Navya
