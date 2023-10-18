@@ -52,19 +52,17 @@ def movie_search():
 def add_to_cart():
     movie_found = request.form.get("movie")
     movie_key = movie_found[0]
-    if not session['cart']:
+    if 'cart' not in session:
         session['cart'] = []
 
-    # if movie_key in movies:
-    session['cart'].append(movies[movie_key])
-    if not session['cart']:
-        raise Exception("Item not added to cart")
+    if movie_key in movies:
+        session['cart'].append(movies[movie_key])
 
     return redirect(url_for('movie.movie_search'))
 
 @movie.route("/get_cart", methods=['GET', 'POST'])
 def view_cart():
-    if not session['cart']:
+    if 'cart' not in session:
         session['cart'] = []
     return render_template("cart.html", cart=session['cart'])
 
