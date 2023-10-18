@@ -67,7 +67,7 @@
         <a href="/">Home</a>
         <a href="/about">About Us</a>
         <a href="/search">Search</a>
-        <a href="/cart">Cart</a>
+        <a href="/get_cart">Cart</a>
         <a href="/contact">Contact</a>
     </div>
     <h1>MockBuster</h1>
@@ -82,6 +82,9 @@
         <input type="hidden" name="movie" value="{{ result }}">
         <input type="submit" value="Add to Cart">
     </form>
+        <form method="post" action="/get_cart">
+            <input type="submit" value="Go to Cart">
+        </form>
     </div>
 </body>
 </html>
