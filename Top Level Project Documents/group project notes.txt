@@ -13,15 +13,16 @@ Break down tutorial series for everyone to work on individually
 What people were doing from last meeting:
 Install and setup instructions for web app 				Davis	- done and on github
 Get a headstart on Selenium								Davis
-Search - add to cart (POST) function					Jason
-Cart													Alexi
+Search - add to cart (POST) function					Jason	- I see commits, is it working?
+Cart													Alexi	- lots of commits, is it working?
 Figure out what diagram to use for explaining ...this	Caleb
 Get payment working with post from cart					Efrain	- reported failure due to ISP outage
-Adding image code to search and cart					Navya
+Adding image code to search and cart					Navya	- I don't see commits on this
 
 What people are doing for Monday
 Web Drivers for each of the major web browsers with guide		Robert
 	Chrome, Edge, Firefox
+Add run instructions for web app to install document			Davis
 Write Selenium app												Davis
 	Write error handling module for Selenium app				Wendy
 	Write Selenium app tutorial	(work with Davis)				Caleb and Taylor
