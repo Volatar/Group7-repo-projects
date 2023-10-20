@@ -62,8 +62,11 @@ def add_to_cart():
 
     return redirect(url_for('movie.movie_search'))
 
+
 @movie.route("/get_cart", methods=['GET', 'POST'])
 def view_cart():
+    if 'cart' not in session:
+        session['cart'] = []
     return render_template("cart.html", cart=session['cart'])
 
 
