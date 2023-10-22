@@ -15,7 +15,6 @@
                 <li><a href="/search">Search</a></li>
                 <li><a href="/get_cart">Cart</a></li>
                 <li><a href="/about">About Us</a></li>
-                <li><a href="/contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +22,8 @@
     <main>
 
         <h2>Your Cart</h2>
-        <br />
+
+        <div id="cart">
         <ul>
             {% for movie in cart %}
                 <li>{{ movie }}
@@ -34,7 +34,7 @@
                 </li>
             {% endfor %}
         </ul>
-        <br />
+        </div>
         {% if cart != [] %}
         <form method="post" action="/empty_cart">
             <input type="submit" value="Empty cart">

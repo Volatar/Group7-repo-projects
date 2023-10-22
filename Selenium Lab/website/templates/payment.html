@@ -2,21 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mockbuster Payment</title>
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mockbuster - Payment</title>
+    <link rel="stylesheet" href="/static/stylesheet.css">
 </head>
 <body>
-    <h1>Mockbuster Payment</h1>
+<header>
+    <h1>Mockbuster</h1>
+</header>
+    <main>
+        <h2>Finish and Pay</h2>
+        <div id="cart">
+            <ul>
+                {% for movie in cart %}
+                    <li>{{ movie }}</li>
+                {% endfor %}
+            </ul>
+        </div>
 
-    <div id="cart">
-        <!-- Display the list of videos from the POST request -->
-    </div>
-	
-    <p>Total Number of Videos: <span id="totalVideos">0</span></p>
-    <p>Total Cost for 3 Days: <span id="totalCost">$0.00</span></p>
-	<p id="price"></p>
-	<button id="confirm-button">OK</button>
-	
+        <p>Total Number of Videos: {{ num_videos }}</p>
+        <p>Total Cost for 3 Days: ${{ total_cost }}0</p>
+        <form method="post" action="/finish_pay">
+            <input type="submit" value="OK">
+        </form>
+        <br />
+        <form method="post" action="/get_cart">
+            <input type=submit value="Return to Cart">
+        </form>
+
+    </main>
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: info@mockbusterrental.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
 	<script>
         // total price and confirmation
 

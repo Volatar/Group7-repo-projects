@@ -31,6 +31,11 @@ nav ul li {
     margin-right: 20px;
 }
 
+#cart ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
 nav a {
     text-decoration: none;
     color: #fff;
@@ -48,6 +53,35 @@ section {
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
+form {
+            margin: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #478dff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #478dff;
+        }
+
+        .result {
+            margin: 20px;
+            font-size: 18px;
+        }
 
 /* Style the footer */
 footer {
