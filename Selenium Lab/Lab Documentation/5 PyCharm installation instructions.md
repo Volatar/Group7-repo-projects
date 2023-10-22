@@ -1,14 +1,17 @@
 # PyCharm instructions
 
 If you are using PyCharm much of the process of getting this project running is easier.
+Pycharm can be found [on it's official website](https://www.jetbrains.com/pycharm/).
+These instructions were written for PyCharm Community Edition but should work for Professional or Education edition.
 
 # Open as a new project
-First download the project files. Unzip them if necessary or clone from Github.
+First download the project source files. Unzip them if necessary or clone from Github.
 Navigate to the folder using Windows Explorer and click on the path at the top. Copy this.
+The files shown in this screenshot will not contain everything you will have as this guide was written early in the project.
 
 ![Windows Explorer](https://i.imgur.com/cWpntrk.png)
 
-Open PyCharm. Click on File in the upper left, and the first option: New Project
+Open PyCharm. Click on File in the upper left, and then click the first option: New Project.
 
 ![New Project](https://i.imgur.com/pyMpAZY.png)
 
@@ -29,13 +32,13 @@ This choice is up to you. I chose a new window as I have multiple projects at th
 
 ![New window?](https://i.imgur.com/l38I98J.png)
 
-You will then be presented with all the project files. 
+You will then be presented with all the project files on the left for your perusal. 
 There is one more step remaining. 
 We need to install all the requirements to the virtual environment.
 
 In the lower left of the screen select the terminal.
 
-In the terminal, type the following:
+In the terminal, type or copy-paste the following:
 >pip install -r "Selenium Lab\Lab Documentation\requirements.txt"
 
 Replace the backslashes with forward slashes (/) if you are on Linux.
