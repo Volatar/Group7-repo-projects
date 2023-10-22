@@ -1,3 +1,6 @@
+The following are instructions on getting this code running on any system. 
+If you are using PyCharm, skip to the next file for instructions on how to get it running there.
+
 # Ensure Python PIP is installed
 Python's PIP is a package manager for Python.
 It can install additional Python packages not included by default in Python.
@@ -44,6 +47,7 @@ To install Flask, run this into your terminal: `pip install flask`
 To install Selenium, run this into your terminal: `pip install selenium`
 
 # Installing Requirements
-You can also install this project's requirements via the requirements.txt.
+You can alternatively install this project's requirements via the requirements.txt file.
+This can be accomplished by running this into your terminal: `pip install -r <PATH>\requirements.txt`
 Ensure that you include the pathway of your requirements.txt if it is not the same as your current directory.
-This can be accomplished by running this into your terminal: `pip install -r PATH\requirements.txt`
+Put "" around the file path if your folder structure contains folders with spaces in their names.
