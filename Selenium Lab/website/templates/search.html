@@ -11,7 +11,7 @@
         <h1>Mockbuster Video Rentals</h1>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><a id="home" href="/">Home</a></li>
                 <li><a id="search" href="/search">Search</a></li>
                 <li><a id="cart" href="/get_cart">Cart</a></li>
                 <li><a id="about" href="/about">About Us</a></li>
@@ -21,13 +21,13 @@
     <form method="post">
         <label for="user_input">Enter the first letter of the movie title (A-Z) to see what's available for rental, or 'quit' to exit:</label>
         <input type="text" id="user_input" name="user_input" required>
-        <input type="submit" value="Search">
+        <input type="submit" id="search_button" value="Search">
     </form>
     <div>
-        <p>{{ result }}</p>
+        <p id="movie">{{ result }}</p>
     <form method="post" action="/add_to_cart">
         <input type="hidden" name="movie" value="{{ result }}">
-        <input type="submit" value="Add to Cart">
+        <input type="submit" id="add_cart" value="Add to Cart">
     </form>
     </div>
 <footer>

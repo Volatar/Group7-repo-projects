@@ -11,10 +11,10 @@
         <h1>Mockbuster Video Rentals</h1>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/search">Search</a></li>
-                <li><a href="/get_cart">Cart</a></li>
-                <li><a href="/about">About Us</a></li>
+                <li><a id="home" href="/">Home</a></li>
+                <li><a id="search" href="/search">Search</a></li>
+                <li><a id="cart" href="/get_cart">Cart</a></li>
+                <li><a id="about" href="/about">About Us</a></li>
             </ul>
         </nav>
     </header>
@@ -23,13 +23,13 @@
 
         <h2>Your Cart</h2>
 
-        <div id="cart">
+        <div id="the_cart">
         <ul>
             {% for movie in cart %}
                 <li>{{ movie }}
                 <form method="post" action="/delete_item">
                     <input type="hidden" name="movie" value="{{ movie }}">
-                    <input type="submit" value="Remove {{ movie }} from cart">
+                    <input type="submit" name="remove {{ movie }}" value="Remove {{ movie }} from cart">
                 </form>
                 </li>
             {% endfor %}
@@ -41,7 +41,7 @@
         </form>
         <form method="post" action="/payment">
             <input type="hidden" value="{{ cart }}">
-            <input type="submit" value="Finish and Pay">
+            <input type="submit" id="pay" value="Finish and Pay">
         </form>
         {% endif %}
     </main>
