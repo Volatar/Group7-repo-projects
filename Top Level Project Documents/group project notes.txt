@@ -6,29 +6,22 @@ Begin tutorial writing
 Discussion:
 Report from each person
 Instruction on how to link commits in github issues
-Test web app
-Break down tutorial series for everyone to work on individually
 
 
 What people were doing from last meeting:
-Install and setup instructions for web app 				Davis	- done and on github
-Get a headstart on Selenium								Davis
-Search - add to cart (POST) function					Jason	- I see commits, is it working?
-Cart													Alexi	- lots of commits, is it working?
-Figure out what diagram to use for explaining ...this	Caleb
-Get payment working with post from cart					Efrain	- reported failure due to ISP outage
-Adding image code to search and cart					Navya	- I don't see commits on this
-
-What people are doing for Monday
 Web Drivers for each of the major web browsers with guide		Robert
 	Chrome, Edge, Firefox
-Add run instructions for web app to install document			Davis
-Write Selenium app												Davis
-	Write error handling module for Selenium app				Wendy
-	Write Selenium app tutorial	(work with Davis)				Caleb and Taylor
-Refine CSS for web app											Alexi
-	Get payment functionality working							Alexi
-Refine cart and search functionality for web app				Navya
-Define and run tests against web app by monday					Jason and Efrain
+Add run instructions for web app to install document			Davis				done
+Write Selenium app												Davis				done?
+	Write error handling module for Selenium app				Wendy				no progress
+	Write Selenium app tutorial	(work with Davis)				Caleb and Taylor	pending instructor Q's
+Refine CSS for web app											Alexi				done
+	Get payment functionality working							Alexi				done
+Refine cart and search functionality for web app				Navya				no progress
+Define and run tests against web app by monday					Jason and Efrain	done
 
-
+What people are doing for Thursday
+Research Test Driven Development portion so we know what to do 	Jason and Efrain
+Write error handling module for Selenium app					Wendy
+Write Selenium app tutorials									Caleb and Taylor
+Refine cart and search functionality for web app (add pictures) Navya?
