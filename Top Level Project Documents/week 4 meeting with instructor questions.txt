@@ -1,0 +1,9 @@
+Questions for instructor tonight
+
+What kinds of tutorials do we want?
+	Here is it working, look at it
+	Here is it partially complete, now fill in the rest
+	
+How are we doing compared to the other groups?
+
+How do you do a TDD tutorial if you already have code?

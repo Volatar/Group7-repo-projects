@@ -22,6 +22,10 @@ Define and run tests against web app by monday					Jason and Efrain	done
 
 What people are doing for Thursday
 Research Test Driven Development portion so we know what to do 	Jason and Efrain
+Refine Selenium app code										Davis
+Write web drivers for the major browsers and put in app			Robert
 Write error handling module for Selenium app					Wendy
 Write Selenium app tutorials									Caleb and Taylor
 Refine cart and search functionality for web app (add pictures) Navya?
+Address bug reports and test feedback for web app				Alexi
+
