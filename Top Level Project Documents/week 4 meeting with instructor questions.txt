@@ -6,4 +6,5 @@ What kinds of tutorials do we want?
 	
 How are we doing compared to the other groups?
 
-How do you do a TDD tutorial if you already have code?
+How do you do a TDD and BDD tutorial if you already have code?
+	What does she want us to cover in those tutorials?
