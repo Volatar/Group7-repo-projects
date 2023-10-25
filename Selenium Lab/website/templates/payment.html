@@ -23,11 +23,11 @@
         <p>Total Number of Videos: {{ num_videos }}</p>
         <p>Total Cost for 3 Days: ${{ total_cost }}0</p>
         <form method="post" action="/finish_pay">
-            <input type="submit" value="OK">
+            <input type="submit" id="movie_pay" value="OK">
         </form>
         <br />
         <form method="post" action="/get_cart">
-            <input type=submit value="Return to Cart">
+            <input type=submit id="return_cart" value="Return to Cart">
         </form>
 
     </main>

@@ -48,8 +48,23 @@ def main():
         print("The movie could not be found, thus was not removed")
     capture_screenshot(driver, "cart_page2")
 
-    # Finally pay for the remaining movie
+    # Navigate to payment page then return to cart
     click_element(driver, By.ID, "pay")
+    click_element(driver, By.ID, "return_cart")
+    capture_screenshot(driver, "payment_page1")
+
+    # Navigate back to search and then add another movie
+    click_element(driver, By.ID, "search")
+    element = driver.find_element(By.ID, "user_input")
+    element.send_keys("J")
+    click_element(driver, By.ID, "search_button")
+    click_element(driver, By.ID, "add_cart")
+
+    # Finally navigate to payment page and pay
+    click_element(driver, By.ID, "cart")
+    click_element(driver, By.ID, "pay")
+    click_element(driver, By.ID, "movie_pay")
+    capture_screenshot(driver, "payment_page2")
 
 
 """Run main"""
