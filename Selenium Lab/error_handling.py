@@ -4,19 +4,14 @@ class ElementNotFoundException(driver):
     if exception_type = ElementNotFoundException
       return print("ElementNotFound")
 
-
-
 class NavigationException(driver):
   """Handles specific exceptions, logging a user-friendly message."""
   def handle_exception(exception_type,message):
     if exception_type = NavigationException
       return print("Navigation Error")
 
-
-
-
 class DataReadException(driver):
-"""Handles specific exceptions, logging a user-friendly message."""
+  """Handles specific exceptions, logging a user-friendly message."""
   def handle_exception(exception_type,message):
     if exception_type = DataReadException
       return print("Data Read Error")
