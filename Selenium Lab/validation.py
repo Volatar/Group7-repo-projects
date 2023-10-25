@@ -13,6 +13,6 @@ def  is_element_present(driver, locator_type, locator_value):
     try:
         driver.find_element(locator_type, locator_value)
         return True
-    except ElementNotFoundException:
-        ElementNotFoundException.handle_exception("Specified element not found.")
+    except:
+        raise ElementNotFoundException("Specified element not found.")
         return False

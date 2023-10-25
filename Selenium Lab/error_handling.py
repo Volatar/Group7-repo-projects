@@ -1,13 +1,9 @@
-class ElementNotFoundException:
-    """Handles specific exceptions, logging a user-friendly message."""
-    def handle_exception(self, message):
-        print(message)
+class ElementNotFoundException(Exception):
+    pass
 
 
-class NavigationException:
-    """Handles specific exceptions, logging a user-friendly message."""
-    def handle_exception(self, message):
-        print(message)
+class NavigationException(Exception):
+    pass
 
 
 # class DataReadException(driver):

@@ -23,7 +23,7 @@ def navigate_to_url(driver, url):
     try:
         driver.get(url)
     except NavigationException:
-        NavigationException.handle_exception("Navigation to sample website failed.")
+        raise NavigationException("Navigation to sample website failed.")
 
 
 """Method to click upon a certain element"""
@@ -31,5 +31,5 @@ def click_element(driver, locator_type, locator_value):
     try:
         element = driver.find_element(locator_type, locator_value)
         element.click()
-    except ElementNotFoundException:
-        ElementNotFoundException.handle_exception("Specified element not found, element could not be clicked.")
+    except:
+        raise ElementNotFoundException("Specified element not found, element could not be clicked.")
