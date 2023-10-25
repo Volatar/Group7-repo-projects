@@ -4,6 +4,7 @@ from web_interact import *
 from validation import *
 from utility import *
 
+
 """Selenium lab main"""
 def main():
     # Initialize WebDriver and navigate to web-app url
@@ -49,6 +50,7 @@ def main():
 
     # Finally pay for the remaining movie
     click_element(driver, By.ID, "pay")
+
 
 """Run main"""
 main()

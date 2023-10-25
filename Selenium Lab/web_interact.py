@@ -1,6 +1,7 @@
 """Import Selenium, web application, and methods from other modules"""
 import os
 from selenium import webdriver
+from error_handling import *
 
 
 """Method that initializes the WebDriver based on the browser type provided."""
@@ -19,8 +20,16 @@ def initialize_driver(browser_type):
 
 """Method that uses the WebDriver instance to navigate to the provided URL."""
 def navigate_to_url(driver, url):
-    driver.get(url)
+    try:
+        driver.get(url)
+    except NavigationException:
+        NavigationException.handle_exception("Navigation to sample website failed.")
 
+
+"""Method to click upon a certain element"""
 def click_element(driver, locator_type, locator_value):
-    element = driver.find_element(locator_type, locator_value)
-    element.click()
+    try:
+        element = driver.find_element(locator_type, locator_value)
+        element.click()
+    except ElementNotFoundException:
+        ElementNotFoundException.handle_exception("Specified element not found, element could not be clicked.")
