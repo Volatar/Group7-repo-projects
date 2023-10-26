@@ -22,8 +22,7 @@ Requirements Tracability Matrix										Taylor				done, submitted
 
 What people are doing for Monday
 Turn BDD playlist into tutorial series				Jason and Efrain
-Write Selenium app tutorials						Caleb and Taylor
-Refine Selenium app code?							Davis
+Write Selenium app tutorials						Caleb, Davis, and Taylor
 Test documentation for downloading web drivers		Taylor
 Address bug reports and test feedback for web app	Alexi
 Research for API lab								Robert, Wendy, Navya
