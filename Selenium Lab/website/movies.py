@@ -35,7 +35,7 @@ movies = {
 @movie.route("/search", methods=["GET", "POST"])
 def movie_search():
     result = ""
-    result_image_url = ""  # Initialize the image URL variable <-----new changes
+    result_image_url = ""  # Initialize the image URL variable
     if request.method == "POST":
         user_input = request.form.get("user_input")
         user_input = user_input.upper()
@@ -44,13 +44,12 @@ def movie_search():
             result = "You have quit the search."
         elif user_input in movies:
             result = movies[user_input]
-        elif user_input.isalpha() and len(user_input) == 1:
-            image_filename = user_input + ".png"  # Construct the image filename <----new changes
-            result_image_url = image_filename  # Set the image URL <----new changes
+            image_filename = user_input + ".png"  # Construct the image filename
+            result_image_url = image_filename  # Set the image URL
         else:
             result = 'No movies found for the letter "{}".'.format(user_input)
 
-    return render_template("search.html", result=result, result_image_url=result_image_url) # <--new changes
+    return render_template("search.html", result=result, result_image_url=result_image_url)
 
 
 @movie.route("/add_to_cart", methods=["POST"])
