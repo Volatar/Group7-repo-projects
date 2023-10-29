@@ -17,14 +17,32 @@ Feature files are an essential part of BDD, as they serve as a plain-text repres
 
 Feature: User Login
   Scenario: Valid user login
+  
     Given a user navigates to the login page
     When they enter valid credentials
     Then they should be logged in successfully
 
   Scenario: Invalid user login
+  
     Given a user navigates to the login page
     When they enter invalid credentials
     Then they should see an error message
+
+### Key elements in a feature file:
+
+Feature: The name of the feature or functionality being described.
+
+Scenario: A specific test scenario or use case related to the feature.
+
+Given: Describes the initial state or context before the scenario.
+
+When: Represents the action or event that triggers the scenario.
+
+Then: Defines the expected outcome or result of the scenario.
+
+Feature files provide a structured, human-readable way to document and communicate software behavior. They also serve as the basis for creating step definitions, which are implemented in Python code.
     
 ### Step Definitions Files
 Step definition files are Python scripts that contain the actual code to implement the steps described in the feature files. Each step in a feature file corresponds to a step definition in Python code.
+
+
