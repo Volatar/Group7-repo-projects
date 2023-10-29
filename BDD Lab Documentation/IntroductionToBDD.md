@@ -50,6 +50,36 @@ Feature: Search input
 Feature files provide a structured, human-readable way to document and communicate software behavior. They also serve as the basis for creating step definitions, which are implemented in Python code.
     
 ### Step Definitions Files
-Step definition files are Python scripts that contain the actual code to implement the steps described in the feature files. Each step in a feature file corresponds to a step definition in Python code.
+
+A good resourse for Behave is... https://pypi.org/project/behave/
+
+Step definition files are Python scripts that contain the actual code to implement the steps described in the feature files. Each step in a feature file corresponds to a step definition in Python code.For example, consider the feature file scenario mentioned above. To implement the steps, you would create a step definition file that may look like this:
+
+    from behave import *
+
+    @given('a user navigates to the searh page')
+    def step_user_navigates_to_search_page(context):
+        # Implement code to navigate to the search page
+        pass
+
+    @when('they enter valid credentials')
+    def step_user_enters_valid_search_input(context):
+        # Implement code to enter valid search input
+        pass
+
+    @then('they should receive correct search suggestion')
+    def step_user_should_receive_correct_search_suggestion(context):
+        # Implement code to verify user receives correct search suggestion
+        pass
+
+    @when('they enter invalid search input')
+    def step_user_enters_invalid_search_input(context):
+      # Implement code to enter invalid search input
+      pass
+
+    @then('they should see an error message')
+    def step_user_should_see_an_error_message(context):
+        # Implement code to verify the presence of an error message
+        pass
 
 
