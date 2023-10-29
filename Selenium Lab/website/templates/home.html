@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mockbuster Video Rental System</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
 </head>
 <body>
     <header>
         <h1>Mockbuster Video Rentals</h1>
         <nav>
             <ul>
-                <li><a href="search.html">Search</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="payment.html">Payment</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a id="search" href="/search">Search</a></li>
+                <li><a id="cart" href="/get_cart">Cart</a></li>
+                <li><a id="about" href="/about">About Us</a></li>
             </ul>
         </nav>
     </header>

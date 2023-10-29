@@ -4,79 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mockbuster - Search</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        h1 {
-            color: #478dff;
-        }
-
-        .navbar {
-            background-color: #333;
-            overflow: hidden;
-        }
-
-        .navbar a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        .navbar a:hover {
-            background-color: #478dff;
-        }
-
-        form {
-            margin: 20px;
-        }
-
-        label {
-            font-weight: bold;
-        }
-
-        input[type="text"] {
-            padding: 5px;
-        }
-
-        input[type="submit"] {
-            background-color: #478dff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #478dff;
-        }
-
-        .result {
-            margin: 20px;
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/stylesheet.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="home.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="search.html">Search</a>
-        <a href="contact.html">Cart</a>
-    </div>
-    <h1>MockBuster</h1>
+    <header>
+        <h1>Mockbuster Video Rentals</h1>
+        <nav>
+            <ul>
+                <li><a id="home" href="/">Home</a></li>
+                <li><a id="search" href="/search">Search</a></li>
+                <li><a id="cart" href="/get_cart">Cart</a></li>
+                <li><a id="about" href="/about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
     <form method="post">
         <label for="user_input">Enter the first letter of the movie title (A-Z) to see what's available for rental, or 'quit' to exit:</label>
         <input type="text" id="user_input" name="user_input" required>
-        <input type="submit" value="Search">
+        <input type="submit" id="search_button" value="Search">
     </form>
     <div>
-        <p>{{ result }}</p>
+        <p id="movie">{{ result }}</p>
+        <img src="{{ url_for('static', filename=result_image_url) }}" alt="Movie Image" width="448" height="672">
+
+        <form method="post" action="/add_to_cart">
+        <input type="hidden" name="movie" value="{{ result }}">
+        <input type="submit" id="add_cart" value="Add to Cart">
+    </form>
     </div>
+<footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: info@mockbusterrental.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
 </body>
 </html>
