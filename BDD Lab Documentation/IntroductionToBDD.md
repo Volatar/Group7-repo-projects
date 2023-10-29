@@ -13,7 +13,9 @@ It encourages developers, testers, and non-technical stakeholders to collaborate
 In Python, when implementing Behavior Driven Development (BDD) using a framework like Behave, the two primary components you'll work with are feature files and step definition files. These components help you write and execute BDD scenarios.
 
 ### Feature Files
-Feature files are an essential part of BDD, as they serve as a plain-text representation of the expected behavior of your software. Feature files are written using the Gherkin language, which is designed to be human-readable and easy to understand. Each feature file typically describes a specific feature or functionality of your application. Here's an example of a simple feature file in Gherkin:
+![image](https://github.com/Volatar/Group7-repo-projects/assets/89305357/df09faff-a4aa-465b-9898-edf209239ea7)
+
+Feature files are an essential part of BDD, as they serve as a plain-text representation of the expected behavior of your software. Feature files are written using the Gherkin language, which is designed to be human-readable and easy to understand. Each feature file typically describes a specific feature or functionality of your application. Feature Files should end in ".feature". Here's an example of a simple feature file in Gherkin:
 
 Feature: Search input
   Scenario: Valid search option
