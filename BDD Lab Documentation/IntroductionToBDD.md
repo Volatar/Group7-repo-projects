@@ -29,16 +29,21 @@ Feature: Search input
     Then they should see an error message
 
 ### Key elements in a feature file:
-
-Feature: The name of the feature or functionality being described.
-
-Scenario: A specific test scenario or use case related to the feature.
-
-Given: Describes the initial state or context before the scenario.
-
-When: Represents the action or event that triggers the scenario.
-
-Then: Defines the expected outcome or result of the scenario.
+  Feature:
+  
+    The name of the feature or functionality being described.
+  Scenario:
+  
+    A specific test scenario or use case related to the feature.
+  Given:
+  
+    Describes the initial state or context before the scenario.
+  When: 
+  
+    Represents the action or event that triggers the scenario.
+  Then: 
+  
+    Defines the expected outcome or result of the scenario.
 
 Feature files provide a structured, human-readable way to document and communicate software behavior. They also serve as the basis for creating step definitions, which are implemented in Python code.
     
