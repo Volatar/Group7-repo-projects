@@ -62,7 +62,7 @@ Step definition files are Python scripts that contain the actual code to impleme
         # Implement code to navigate to the search page
         pass
 
-    @when('they enter valid credentials')
+    @when('they enter valid search input')
     def step_user_enters_valid_search_input(context):
         # Implement code to enter valid search input
         pass
