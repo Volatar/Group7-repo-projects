@@ -25,7 +25,9 @@
     </form>
     <div>
         <p id="movie">{{ result }}</p>
-    <form method="post" action="/add_to_cart">
+        <img src="{{ url_for('static', filename=result_image_url) }}" alt="Movie Image" width="448" height="672">
+
+        <form method="post" action="/add_to_cart">
         <input type="hidden" name="movie" value="{{ result }}">
         <input type="submit" id="add_cart" value="Add to Cart">
     </form>
