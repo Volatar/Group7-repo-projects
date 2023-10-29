@@ -15,17 +15,17 @@ In Python, when implementing Behavior Driven Development (BDD) using a framework
 ### Feature Files
 Feature files are an essential part of BDD, as they serve as a plain-text representation of the expected behavior of your software. Feature files are written using the Gherkin language, which is designed to be human-readable and easy to understand. Each feature file typically describes a specific feature or functionality of your application. Here's an example of a simple feature file in Gherkin:
 
-Feature: User Login
-  Scenario: Valid user login
+Feature: Search input
+  Scenario: Valid search option
   
-    Given a user navigates to the login page
-    When they enter valid credentials
-    Then they should be logged in successfully
+    Given a user navigates to the search page
+    When they enter valid search input
+    Then they should receive correct search suggestion
 
-  Scenario: Invalid user login
+  Scenario: Invalid search option
   
-    Given a user navigates to the login page
-    When they enter invalid credentials
+    Given a user navigates to the search page
+    When they enter invalid search input
     Then they should see an error message
 
 ### Key elements in a feature file:
