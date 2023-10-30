@@ -1,28 +1,25 @@
 Group Project Meeting agenda
 
 Tasks:
-Begin tutorial writing
+Tutorial writing
+Research
+Bug fixing
 
 Discussion:
 Report from each person
-Instruction on how to link commits in github issues
 
 
 What people were doing from last meeting:
-Research Behavior Driven Development portion so we know what to do 	Jason and Efrain	Some progress
-Input found bugs into github										Jason and Efrain	done
-Refine Selenium app code											Davis				progress made
-Write web drivers for the major browsers and put in app				Robert				done
-Write documentation for downloading web drivers						Robert				first draft
-Write error handling module for Selenium app						Wendy				done
-Write Selenium app tutorials										Caleb and Taylor	stalled
-Refine cart and search functionality for web app (add pictures) 	Navya?				done, awaiting merge
-Address bug reports and test feedback for web app					Alexi				?
-Requirements Tracability Matrix										Taylor				done, submitted
-
-What people are doing for Monday
 Turn BDD playlist into tutorial series				Jason and Efrain
 Write Selenium app tutorials						Caleb, Davis, and Taylor
 Test documentation for downloading web drivers		Taylor
 Address bug reports and test feedback for web app	Alexi
 Research for API lab								Robert, Wendy, Navya
+
+What people are doing for Thursday
+Continue BDD tutorial series							Jason and Efrain
+Finish Selenium app tutorials?							Caleb, Davis, and Taylor
+Further test documentation for downloading web drivers	Taylor
+Finish addressing bug reports #35						Alexi
+Refine web driver instructions							Robert
+Research for API lab									Wendy, Navya
