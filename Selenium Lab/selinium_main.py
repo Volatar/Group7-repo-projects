@@ -50,8 +50,8 @@ def main():
 
     # Navigate to payment page then return to cart
     click_element(driver, By.ID, "pay")
-    click_element(driver, By.ID, "return_cart")
     capture_screenshot(driver, "payment_page1")
+    click_element(driver, By.ID, "return_cart")
 
     # Navigate back to search and then add another movie
     click_element(driver, By.ID, "search")
@@ -63,8 +63,8 @@ def main():
     # Finally navigate to payment page and pay
     click_element(driver, By.ID, "cart")
     click_element(driver, By.ID, "pay")
-    click_element(driver, By.ID, "movie_pay")
     capture_screenshot(driver, "payment_page2")
+    click_element(driver, By.ID, "movie_pay")
 
 
 """Run main"""
