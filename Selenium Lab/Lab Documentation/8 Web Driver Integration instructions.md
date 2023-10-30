@@ -11,23 +11,23 @@ First, set the system property for Gecko Driver.
 
 TODO: None of these images should be an image, you want to be able to copy and paste code.
 
-![Imgur](https://i.imgur.com/3xTUdpO.png)
+    ![Imgur](https://i.imgur.com/3xTUdpO.png)
 
 2.Using marionette property:
 Gecko driver can also be initialized using marionette property as below
 
-![Imgur](https://i.imgur.com/DJvUkOk.png)
+    ![Imgur](https://i.imgur.com/DJvUkOk.png)
 If gecko driver is initialized using the above method, code for desired capabilities is not required.
 
 3.Using FirefoxOptions:
 Mozilla Firefox version 47+ has marionette driver as a legacy system. Taking advantage of this, 
 marionette driver can be called using Firefox Options as below
 
-![Imgur](https://i.imgur.com/tabsEu6.png)
+    ![Imgur](https://i.imgur.com/tabsEu6.png)
 
 ### Code for launching firefox using Gecko driver
 
-![Imgur](https://i.imgur.com/VtBzYxQ.png)
+    ![Imgur](https://i.imgur.com/VtBzYxQ.png)
 
 #### Code Explanation:
 
@@ -39,14 +39,14 @@ Finally, we need to start the Firefox browser instance using the object for Desi
 
 The below statements help to achieve the above task.
 
-![Imgur](https://i.imgur.com/vwnFtAk.png)
+    ![Imgur](https://i.imgur.com/vwnFtAk.png)
 
 ### @Test method:
 
 We are navigating to user-specified URL using the inbuilt “get” method provided by Selenium web driver. 
 The below statement help to achieve the same.
 
-![Imgur](https://i.imgur.com/DWJC82v.png)
+    ![Imgur](https://i.imgur.com/DWJC82v.png)
 
 ### @After method:
 
@@ -85,7 +85,7 @@ Hence we will start by creating a Python file named “automation_script_seleniu
 2. Finally, we will integrate the Edge driver with the Selenium framework to open a browser session. 
 Here we will open the browser and then navigate to a web page (https://www.lambdatest.com) with an automation script.
 
-![Imgur](https://i.imgur.com/4qXLnUT.png)
+    ![Imgur](https://i.imgur.com/4qXLnUT.png)
 
 In the above code, we are instructing the Microsoft Edge browser to open the specified web page (https://www.lambdatest.com). 
 At first, we create an “edgeService” object that represents the Microsoft Edge browser using the Service class provided by Selenium.
@@ -95,4 +95,4 @@ Finally, we navigate to the specified web page (https://www.lambdatest.com) with
 
 Now if we run this code, it will automate the Microsoft Edge browser and open the specified page in a new browser session, as shown in the image below.
 
-![Imgur](https://i.imgur.com/r4koR4f.png)
+    ![Imgur](https://i.imgur.com/r4koR4f.png)
