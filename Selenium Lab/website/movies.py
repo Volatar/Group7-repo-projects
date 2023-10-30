@@ -49,7 +49,7 @@ def movie_search():
         else:
             result = 'No movies found for the letter "{}".'.format(user_input)
 
-    return render_template("search.html", result=result, result_image_url=result_image_url)
+    return render_template("search_result.html", result=result, result_image_url=result_image_url)
 
 
 @movie.route("/add_to_cart", methods=["POST"])
