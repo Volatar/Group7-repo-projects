@@ -7,6 +7,7 @@ TODO
 ### There are three different ways to initialize GeckoDriver.
 
 1.Using DesiredCapabilities:
+
 First, set the system property for Gecko Driver.
 
 Syntax
