@@ -80,3 +80,5 @@ This is a collection of labs for teaching, made as a group project for Wake Tech
 - Caleb Luce
 - Alexi McNabb
 - Taylor Sanderson
+- Images by Midjourney
+- Image editing by Collin Sanderson

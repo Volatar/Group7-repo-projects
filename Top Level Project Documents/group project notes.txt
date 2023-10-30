@@ -9,26 +9,20 @@ Instruction on how to link commits in github issues
 
 
 What people were doing from last meeting:
-Web Drivers for each of the major web browsers with guide		Robert				done, awaiting merge
-	Chrome, Edge, Firefox
-Add run instructions for web app to install document			Davis				done
-Write Selenium app												Davis				done?
-	Write error handling module for Selenium app				Wendy				no progress
-	Write Selenium app tutorial	(work with Davis)				Caleb and Taylor	pending instructor Q's
-Refine CSS for web app											Alexi				done
-	Get payment functionality working							Alexi				done
-Refine cart and search functionality for web app				Navya				no progress
-Define and run tests against web app by monday					Jason and Efrain	done
+Research Behavior Driven Development portion so we know what to do 	Jason and Efrain	Some progress
+Input found bugs into github										Jason and Efrain	done
+Refine Selenium app code											Davis				progress made
+Write web drivers for the major browsers and put in app				Robert				done
+Write documentation for downloading web drivers						Robert				first draft
+Write error handling module for Selenium app						Wendy				done
+Write Selenium app tutorials										Caleb and Taylor	stalled
+Refine cart and search functionality for web app (add pictures) 	Navya?				done, awaiting merge
+Address bug reports and test feedback for web app					Alexi				?
+Requirements Tracability Matrix										Taylor				done, submitted
 
-What people are doing for Thursday
-Research Behavior Driven Development portion so we know what to do 	Jason and Efrain
-Input found bugs into github										Jason and Efrain
-Refine Selenium app code											Davis
-Write web drivers for the major browsers and put in app				Robert
-Write documentation for downloading web drivers						Robert
-Write error handling module for Selenium app						Wendy
-Write Selenium app tutorials										Caleb and Taylor
-Refine cart and search functionality for web app (add pictures) 	Navya?
-Address bug reports and test feedback for web app					Alexi
-Requirements Tracability Matrix										Taylor
-
+What people are doing for Monday
+Turn BDD playlist into tutorial series				Jason and Efrain
+Write Selenium app tutorials						Caleb, Davis, and Taylor
+Test documentation for downloading web drivers		Taylor
+Address bug reports and test feedback for web app	Alexi
+Research for API lab								Robert, Wendy, Navya
