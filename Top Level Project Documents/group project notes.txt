@@ -20,6 +20,7 @@ What people are doing for Thursday
 Continue BDD tutorial series							Jason and Efrain
 Finish Selenium app tutorials?							Caleb, Davis, and Taylor
 Further test documentation for downloading web drivers	Taylor
+Check that Alexi's bug reports are fixed 				Taylor
 Finish addressing bug reports #35						Alexi
 Refine web driver instructions							Robert
-Research for API lab									Wendy, Navya
+Evaluate API (do we use our app or another's?)			Davis
