@@ -12,11 +12,12 @@ Report from each person
 What people were doing from last meeting:
 Continue BDD tutorial series							Jason and Efrain			progress made
 Finish Selenium app tutorials?							Caleb, Davis, and Taylor	No commits, working on it
-Further test documentation for downloading web drivers	Taylor
-Check that Alexi's bug reports are fixed 				Taylor
-Finish addressing bug reports #35						Alexi						progress made
+Further test documentation for downloading web drivers	Taylor						done
+Check that Alexi's bug reports are fixed 				Taylor						done
+Finish addressing bug reports #35						Alexi						done?
 Refine web driver instructions							Robert						done
-Evaluate API (do we use our app or another's?)			Davis
+Evaluate API (do we use our app or another's?)			Davis						awaiting report
 
 What people are doing for Thursday
 Last part of BDD tutorial series						Jason and Efrain
+Finish Selenium app tutorials?							Caleb, Davis, and Taylor
