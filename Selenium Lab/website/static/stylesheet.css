@@ -36,6 +36,19 @@ nav ul li {
     padding: 10px;
 }
 
+#results {
+    text-align: center;
+}
+
+#results img {
+    height: 400px;
+    width: auto;
+}
+
+#search-field {
+    text-align: center;
+}
+
 nav a {
     text-decoration: none;
     color: #fff;
