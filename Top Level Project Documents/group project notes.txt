@@ -10,7 +10,7 @@ Report from each person
 
 
 What people were doing from last meeting:
-Continue BDD tutorial series							Jason and Efrain			No commits?
+Continue BDD tutorial series							Jason and Efrain			progress made
 Finish Selenium app tutorials?							Caleb, Davis, and Taylor	No commits, working on it
 Further test documentation for downloading web drivers	Taylor
 Check that Alexi's bug reports are fixed 				Taylor
