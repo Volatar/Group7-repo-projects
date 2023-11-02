@@ -177,24 +177,39 @@ To convert to gecko, you need to simply add one line of code
 
 ---
 
-# Integration of the Edge Driver
+## Integration of the Edge Driver
 
-TODO: Turn images of code into code blocks please
 
-1. We will jump into the setup and integration of Edge driver with the Selenium framework to automate the Microsoft Edge browser. 
-Hence we will start by creating a Python file named “automation_script_selenium.py” and open it in Visual Studio Code.
+1.We will jump into the setup and integration of Edge driver with the Selenium framework to automate the Microsoft Edge browser. Hence we will start by creating a Python file named “automation_script_selenium.py” and open it in Visual Studio Code.
 
-2. Finally, we will integrate the Edge driver with the Selenium framework to open a browser session. 
-Here we will open the browser and then navigate to a web page (https://www.lambdatest.com) with an automation script.
+2.Finally, we will integrate the Edge driver with the Selenium framework to open a browser session. Here we will open the browser and then navigate to a web page (https://www.lambdatest.com) with an automation script.
 
-![Imgur](https://i.imgur.com/4qXLnUT.png)
+Python Code
 
-In the above code, we are instructing the Microsoft Edge browser to open the specified web page (https://www.lambdatest.com). 
-At first, we create an “edgeService” object that represents the Microsoft Edge browser using the Service class provided by Selenium.
+   
+    from selenium import webdriver
+    from selenium.webdriver.edge.service import Service
 
-3. Next, we assign this service object to the Edge driver in the “edgeDriver” variable. This will be responsible for controlling and executing actions on the browser. 
-Finally, we navigate to the specified web page (https://www.lambdatest.com) with the help of edgeDriver.get(‘https://www.lambdatest.com’) method.
 
+    # Driver Code
+    if __name__ == '__main__':
+        # create service object
+        edgeService = Service(
+            r"D:\\Lambdatest Tools\\edgedriver_win64\\msedgedriver.exe")
+
+
+        # create webdriver object
+        edgeDriver = webdriver.Edge(service=edgeService)
+
+
+        # open browser and navigate to the website
+        edgeDriver.get('https://www.lambdatest.com')
+
+![Imgur](https://i.imgur.com/Mq66ezb.png)
+
+In the above code, we are instructing the Microsoft Edge browser to open the specified web page (https://www.lambdatest.com). At first, we create an “edgeService” object that represents the Microsoft Edge browser using the Service class provided by Selenium.
+
+Next, we assign this service object to the Edge driver in the “edgeDriver” variable. This will be responsible for controlling and executing actions on the browser. Finally, we navigate to the specified web page (https://www.lambdatest.com) with the help of edgeDriver.get(‘https://www.lambdatest.com’) method.
 Now if we run this code, it will automate the Microsoft Edge browser and open the specified page in a new browser session, as shown in the image below.
 
 ![Imgur](https://i.imgur.com/r4koR4f.png)
