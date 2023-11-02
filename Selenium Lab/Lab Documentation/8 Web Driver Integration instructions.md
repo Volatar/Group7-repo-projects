@@ -86,6 +86,7 @@ Gecko driver can also be initialized using marionette property as below
 If gecko driver is initialized using the above method, code for desired capabilities is not required.
 
 3.Using FirefoxOptions:
+
 Mozilla Firefox version 47+ has marionette driver as a legacy system. Taking advantage of this, 
 marionette driver can be called using Firefox Options as below
 
