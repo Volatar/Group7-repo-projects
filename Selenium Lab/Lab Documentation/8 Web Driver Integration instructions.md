@@ -78,6 +78,7 @@ Here is the Complete Code
 
 
 2.Using marionette property:
+
 Gecko driver can also be initialized using marionette property as below
 
     System.setProperty("webdriver.gecko.driver","D:\\Downloads\\GeckoDriver.exe");
