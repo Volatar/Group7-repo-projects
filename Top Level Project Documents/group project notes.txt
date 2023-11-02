@@ -10,16 +10,18 @@ Report from each person
 
 
 What people were doing from last meeting:
-Turn BDD playlist into tutorial series				Jason and Efrain
-Write Selenium app tutorials						Caleb, Davis, and Taylor
-Test documentation for downloading web drivers		Taylor
-Address bug reports and test feedback for web app	Alexi
-Research for API lab								Robert, Wendy, Navya
+Continue BDD tutorial series							Jason and Efrain			progress made
+Finish Selenium app tutorials?							Caleb, Davis, and Taylor	No commits, working on it
+Further test documentation for downloading web drivers	Taylor						done
+Check that Alexi's bug reports are fixed 				Taylor						done
+Finish addressing bug reports #35						Alexi						done?
+Refine web driver instructions							Robert						done
+Evaluate API (do we use our app or another's?)			Davis						awaiting report
 
 What people are doing for Thursday
-Continue BDD tutorial series							Jason and Efrain
-Finish Selenium app tutorials?							Caleb, Davis, and Taylor
-Further test documentation for downloading web drivers	Taylor
-Finish addressing bug reports #35						Alexi
+Last part of BDD tutorial series						Jason and Efrain
+Begin adding API code to web app - sign in system		Davis
+Begin adding API code to web app - json					Caleb
+Turn selenium totorial into markdown					Taylor
 Refine web driver instructions							Robert
-Research for API lab									Wendy, Navya
+Further refine web app in selenium branch				Alexi
