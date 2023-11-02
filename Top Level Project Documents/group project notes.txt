@@ -20,4 +20,8 @@ Evaluate API (do we use our app or another's?)			Davis						awaiting report
 
 What people are doing for Thursday
 Last part of BDD tutorial series						Jason and Efrain
-Finish Selenium app tutorials?							Caleb, Davis, and Taylor
+Begin adding API code to web app - sign in system		Davis
+Begin adding API code to web app - json					Caleb
+Turn selenium totorial into markdown					Taylor
+Refine web driver instructions							Robert
+Further refine web app in selenium branch				Alexi
