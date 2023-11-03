@@ -53,6 +53,8 @@ python:
 
 First, set the system property for Gecko Driver.
 
+#### Java code for configuring the WebDriver and DesiredCapabilities for Selenium automation with the Firefox browser. 
+
 Syntax
 
     System.setProperty("webdriver.gecko.driver","Path to geckdriver.exe file");
