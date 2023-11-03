@@ -47,134 +47,66 @@ python:
 
 # Steps to initialize GeckoDriver for Firefox
 
-### There are three different ways to initialize GeckoDriver.
+## How to Launch the Firefox Browser Using GeckoDriver in Selenium Python
 
-1.Using DesiredCapabilities:
-
-First, set the system property for Gecko Driver.
-
-#### Java code for configuring the WebDriver and DesiredCapabilities for Selenium automation with the Firefox browser. 
-
-#### Syntax
-
-    System.setProperty("webdriver.gecko.driver","Path to geckdriver.exe file");
-
-#### Example
-
-    System.setProperty("webdriver.gecko.driver","D:\\Downloads\\GeckoDriver.exe");
-
-Next, set Desired Capabilities.
-
-Desired Capabilities helps Selenium to understand the browser name, version and operating system to execute the automated tests.
-Below is the code to set gecko driver using DesiredCapabilities class.
-
-    DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-    capabilities.setCapability("marionette",true);
-
-#### Here is the Complete Code
-
-    System.setProperty("webdriver.gecko.driver", driverPath);
-    DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-    capabilities.setCapability("marionette",true);
-    driver= new FirefoxDriver(capabilities);
+### Pre-requisites
 
 
-#### 2.Using marionette property:
+1. Set up a Python environment.
 
-Gecko driver can also be initialized using marionette property as below
 
-    System.setProperty("webdriver.gecko.driver","D:\\Downloads\\GeckoDriver.exe");
+2. Install GeckoDriver and use any of the methods outlined above to ensure that the driver is accessible when running the test script.
 
-If gecko driver is initialized using the above method, code for desired capabilities is not required.
 
-#### 3.Using FirefoxOptions:
+3. Ensure that Selenium is installed. If it isn’t, use the pip package installer to install the package. If you have Conda or Anaconda set up, simply enter the following command in the Linux terminal, or the Conda/Anaconda prompt.
 
-Mozilla Firefox version 47+ has marionette driver as a legacy system. Taking advantage of this, 
-marionette driver can be called using Firefox Options as below
+        pip install selenium
 
-    FirefoxOptions options = new FirefoxOptions();
-    options.setLegacy(true);
+## Steps to Launch the Firefox Browser
 
-### Code for launching firefox using Gecko driver
-    
-    package com.guru99.demo;
+**Step 1**: Import the WebDriver and options module from Selenium.
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
+        from selenium import webdriver
+        from selenium.webdriver.firefox.options import Options
 
-      public class GeckoDriverDemo 
-      {
+**Step 2: Options** is a concept that was added to Selenium in order to allow the user to customize the Firefox session. In this example, it is used to provide the binary location of firefox.exe.
 
-         String driverPath = "D:\\Guru99Demo\\GeckoDriver.exe";
-         public WebDriver driver;
+        options = Options()
+        options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
 
-         @Before
-         public void startBrowser() {
-            System.setProperty("webdriver.gecko.driver", driverPath);
-            DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-            capabilities.setCapability("marionette", true);
-            driver = new FirefoxDriver(capabilities);
+**Step 3**: Initialize the browser driver, and pass an instance of the options class in the driver initialization. If GeckoDriver hasn’t been added to the path, then execute the following command.
 
-         }
+        driver = webdriver.Firefox(executable_path=r'C:\Program Files (x86)\geckodriver.exe', options=options)
 
-         @Test
-         public void navigateToUrl() {
-            driver.get("http://demo.guru99.com/selenium/guru99home/");
-         }
 
-         @After
-         public void endTest() {
-            driver.quit();
-         }
-      }
+However, if the geckodriver.exe file location has been added to the path, then execute the following command.
 
-#### Code Explanation:
+        driver = webdriver.Firefox(options=options)
 
-#### @Before method:
 
-Initially, we need to set the system property for gecko driver to the geckdriver.exe file download location. We need to set the marionette property to true for Selenium to use Marionette protocol to communicate with Gecko Driver. Finally, 
-we need to start the Firefox browser instance using the object for Desired Capabilities.
+**Step 4**: Launch the Firefox browser and navigate to a website.
 
-The below statements help to achieve the above task.
+        
+        driver.get('https://www.bstackdemo.com/')
 
-    System.setProperty("webdriver.gecko.driver", driverPath);
-    DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-    capabilities.setCapability("marionette",true);
-    driver= new FirefoxDriver(capabilities);
+#### **Sample Output:**
 
-### @Test method:
+![Imgur](https://i.imgur.com/laUrDYc.png)
 
-We are navigating to user-specified URL using the inbuilt “get” method provided by Selenium web driver. The below statement help to achieve the same.
+Alternatively, this process is made far easier if the WebDriver-manager package is utilized. 
 
-    driver.get("http://demo.guru99.com/selenium/guru99home/"); 
+See the example code below:
 
-### @After method:
+        from selenium import webdriver
+        from selenium.webdriver.firefox.service import Service as FirefoxService
+        from webdriver_manager.firefox import GeckoDriverManager
 
-Finally, we are closing the browser instance using the quit method.
+        driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
+        driver.get('https://www.bstackdemo.com/')
 
-    driver.quit();
+#### **Output:**
 
-### Modify a script for non- Gecko to Gecko
-
-Non-gecko driver script used before Selenium 3 was straightforward. We need to create an instance of Firefox driver and use the instance variable.
-
-    @Before
-    public void startBrowser() {
-        driver = new FirefoxDriver
-    }
-
-To convert to gecko, you need to simply add one line of code
-
-    @Before
-    public void startBrowser() {
-        System.setProperty("webdriver.gecko.driver", "D:\\Downloads\\GeckoDriver.exe");
-        driver = new FirefoxDriver();
-
-    }
+![Imgur](https://i.imgur.com/04GNry1.png)
 
 
 ---
@@ -182,9 +114,9 @@ To convert to gecko, you need to simply add one line of code
 ## Integration of the Edge Driver
 
 
-1.We will jump into the setup and integration of Edge driver with the Selenium framework to automate the Microsoft Edge browser. Hence we will start by creating a Python file named “automation_script_selenium.py” and open it in Visual Studio Code.
+1. We will jump into the setup and integration of Edge driver with the Selenium framework to automate the Microsoft Edge browser. Hence we will start by creating a Python file named “automation_script_selenium.py” and open it in Visual Studio Code.
 
-2.Finally, we will integrate the Edge driver with the Selenium framework to open a browser session. Here we will open the browser and then navigate to a web page (https://www.lambdatest.com) with an automation script.
+2. Finally, we will integrate the Edge driver with the Selenium framework to open a browser session. Here we will open the browser and then navigate to a web page (https://www.lambdatest.com) with an automation script.
 
 #### Python Code:
 
