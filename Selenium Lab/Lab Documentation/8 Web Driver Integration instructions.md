@@ -55,11 +55,11 @@ First, set the system property for Gecko Driver.
 
 #### Java code for configuring the WebDriver and DesiredCapabilities for Selenium automation with the Firefox browser. 
 
-Syntax
+#### Syntax
 
     System.setProperty("webdriver.gecko.driver","Path to geckdriver.exe file");
 
-Example
+#### Example
 
     System.setProperty("webdriver.gecko.driver","D:\\Downloads\\GeckoDriver.exe");
 
@@ -71,7 +71,7 @@ Below is the code to set gecko driver using DesiredCapabilities class.
     DesiredCapabilities capabilities = DesiredCapabilities.firefox();
     capabilities.setCapability("marionette",true);
 
-Here is the Complete Code
+#### Here is the Complete Code
 
     System.setProperty("webdriver.gecko.driver", driverPath);
     DesiredCapabilities capabilities = DesiredCapabilities.firefox();
@@ -79,7 +79,7 @@ Here is the Complete Code
     driver= new FirefoxDriver(capabilities);
 
 
-2.Using marionette property:
+#### 2.Using marionette property:
 
 Gecko driver can also be initialized using marionette property as below
 
@@ -87,7 +87,7 @@ Gecko driver can also be initialized using marionette property as below
 
 If gecko driver is initialized using the above method, code for desired capabilities is not required.
 
-3.Using FirefoxOptions:
+#### 3.Using FirefoxOptions:
 
 Mozilla Firefox version 47+ has marionette driver as a legacy system. Taking advantage of this, 
 marionette driver can be called using Firefox Options as below
@@ -186,7 +186,7 @@ To convert to gecko, you need to simply add one line of code
 
 2.Finally, we will integrate the Edge driver with the Selenium framework to open a browser session. Here we will open the browser and then navigate to a web page (https://www.lambdatest.com) with an automation script.
 
-Python Code
+#### Python Code:
 
    
     from selenium import webdriver
