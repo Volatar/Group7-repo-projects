@@ -4,7 +4,14 @@ Selenium is a testing tool that allows for applications and code to be rigorousl
 The application presented in this lab has several tests dedicated to ensuring various facets of the code function on several levels. 
 To start, here is a sampling of code from ‘selenium_main.py’:
 
-![img1](https://i.imgur.com/4Tk79TO.jpg)
+```py
+# Add the movie to cart and select and add another
+click_element(driver, By.ID, "add_cart")
+element = driver.find_element(By.ID, "user_input")
+element.send_keys("A")
+click_element(driver, By.ID, "search_button")
+click_element(driver, By.ID, "add_cart")
+```
 
 This test is designed to bounce off another test, so assume that ‘Alien VS Ogre’ is a movie loaded into the cart currently so that we can perform a test with visual example working off of the cart screen, as for other tests, ‘Elven’ will be the movie visual example.
 
@@ -12,7 +19,16 @@ This test is designed to bounce off another test, so assume that ‘Alien VS Ogr
 
 Here is the code for that test:
 
-![img2](https://i.imgur.com/Ic8BmQp.jpg)
+```py
+# Navigate to cart and remove one of the movies
+click_element(driver, By.ID, "cart")
+capture_screenshot(driver, "cart_page1")
+if is_element_present(driver, By.NAME, "remove Alien vs Ogre"):
+    click_element(driver, By.NAME, "remove Alien vs Ogre")
+else:
+    print("The movie could not be found, thus was not removed")
+capture_screenshot(driver, "cart_page2")
+```
 
 First and foremost is that when tests are run, the assumed starting point would be the main page, so the first line of code navigates to the Cart page. 
 The second line is for automatic screenshots and proof of working tests. 
@@ -30,7 +46,12 @@ The highlighted portion of the image above shows the exact button the test looks
 
 Here is the code for another test:
 
-![img4](https://i.imgur.com/jZShIqy.jpg)
+```py
+# Navigate to payment page then return to cart
+click_element(driver, By.ID, "pay")
+capture_screenshot(driver, "payment_page1")
+click_element(driver, By.ID, "return_cart")
+```
 
 This test works by clicking a present button with an ID of ‘pay,’ and takes a screenshot to ensure the payment screen is reached. 
 Once proof is captured, the test attempts to click the button within the payment page to return to the cart, with an ID of ‘return_cart.’ 
@@ -49,7 +70,13 @@ Once the screenshot is obtained, the code will press the button in the image abo
 
 Here is the code for a third and final test:
 
-![img7](https://i.imgur.com/rd20811.jpg)
+```py
+# Finally, navigate to payment page and pay
+click_element(driver, By.ID, "cart")
+click_element(driver, By.ID, "pay")
+capture_screenshot(driver, "payment_page2")
+click_element(driver, By.ID, "movie_pay")
+```
 
 What this test aims to do is navigate to the payment page, taking a screenshot once it arrives to ensure the correct page is visible. 
 Once the page is assured, it simply processes through the payment, which does not actually accept any money, as a simple application designed for this lab. 

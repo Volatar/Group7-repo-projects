@@ -60,7 +60,7 @@ def main():
     click_element(driver, By.ID, "search_button")
     click_element(driver, By.ID, "add_cart")
 
-    # Finally navigate to payment page and pay
+    # Finally, navigate to payment page and pay
     click_element(driver, By.ID, "cart")
     click_element(driver, By.ID, "pay")
     capture_screenshot(driver, "payment_page2")
