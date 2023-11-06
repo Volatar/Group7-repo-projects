@@ -21,29 +21,29 @@ Include the path to ChromeDriver when instantiating webdriver.Chrome (see sample
 ### Some example code that calls ChromeDriver
 
 python:
+```py
+import time
 
-    import time
-
-    from selenium import webdriver
+from selenium import webdriver
 
 
 
-    driver = webdriver.Chrome('/path/to/chromedriver')  # Optional argument, if not specified will search path.
+driver = webdriver.Chrome('/path/to/chromedriver')  # Optional argument, if not specified will search path.
 
-    driver.get('http://www.google.com/');
+driver.get('http://www.google.com/');
 
-    time.sleep(5) # Let the user actually see something!
+time.sleep(5) # Let the user actually see something!
 
-    search_box = driver.find_element_by_name('q')
+search_box = driver.find_element_by_name('q')
 
-    search_box.send_keys('ChromeDriver')
+search_box.send_keys('ChromeDriver')
 
-    search_box.submit()
+search_box.submit()
 
-    time.sleep(5) # Let the user actually see something!
+time.sleep(5) # Let the user actually see something!
 
-    driver.quit()
-
+driver.quit()
+```
 
 # Steps to initialize GeckoDriver for Firefox
 
@@ -54,40 +54,40 @@ python:
 
 1. Set up a Python environment.
 
-
 2. Install GeckoDriver and use any of the methods outlined above to ensure that the driver is accessible when running the test script.
 
-
-3. Ensure that Selenium is installed. If it isn’t, use the pip package installer to install the package. If you have Conda or Anaconda set up, simply enter the following command in the Linux terminal, or the Conda/Anaconda prompt.
-
-        pip install selenium
+3. Ensure that Selenium is installed. If it isn’t, use the pip package installer to install the package. 
+If you have Conda or Anaconda set up, simply enter the following command in the Linux terminal, or the Conda/Anaconda prompt:
+`pip install selenium`
 
 ## Steps to Launch the Firefox Browser
 
 **Step 1**: Import the WebDriver and options module from Selenium.
-
-        from selenium import webdriver
-        from selenium.webdriver.firefox.options import Options
+```py
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+```
 
 **Step 2: Options** is a concept that was added to Selenium in order to allow the user to customize the Firefox session. In this example, it is used to provide the binary location of firefox.exe.
-
-        options = Options()
-        options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
+```py
+options = Options()
+options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
+```
 
 **Step 3**: Initialize the browser driver, and pass an instance of the options class in the driver initialization. If GeckoDriver hasn’t been added to the path, then execute the following command.
-
-        driver = webdriver.Firefox(executable_path=r'C:\Program Files (x86)\geckodriver.exe', options=options)
-
+```py
+driver = webdriver.Firefox(executable_path=r'C:\Program Files (x86)\geckodriver.exe', options=options)
+```
 
 However, if the geckodriver.exe file location has been added to the path, then execute the following command.
-
-        driver = webdriver.Firefox(options=options)
-
+```py
+driver = webdriver.Firefox(options=options)
+```
 
 **Step 4**: Launch the Firefox browser and navigate to a website.
-
-        
-        driver.get('https://www.bstackdemo.com/')
+```py
+driver.get('https://www.bstackdemo.com/')
+```
 
 #### **Sample Output:**
 
@@ -96,14 +96,14 @@ However, if the geckodriver.exe file location has been added to the path, then e
 Alternatively, this process is made far easier if the WebDriver-manager package is utilized. 
 
 See the example code below:
+```py
+from selenium import webdriver
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from webdriver_manager.firefox import GeckoDriverManager
 
-        from selenium import webdriver
-        from selenium.webdriver.firefox.service import Service as FirefoxService
-        from webdriver_manager.firefox import GeckoDriverManager
-
-        driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
-        driver.get('https://www.bstackdemo.com/')
-
+driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()))
+driver.get('https://www.bstackdemo.com/')
+```
 #### **Output:**
 
 ![Imgur](https://i.imgur.com/04GNry1.png)
@@ -120,26 +120,25 @@ See the example code below:
 
 #### Python Code:
 
-   
-    from selenium import webdriver
-    from selenium.webdriver.edge.service import Service
+```py
+from selenium import webdriver
+from selenium.webdriver.edge.service import Service
 
 
-    # Driver Code
-    if __name__ == '__main__':
-        # create service object
-        edgeService = Service(
-            r"D:\\Lambdatest Tools\\edgedriver_win64\\msedgedriver.exe")
+# Driver Code
+if __name__ == '__main__':
+  # create service object
+  edgeService = Service(
+      r"D:\\Lambdatest Tools\\edgedriver_win64\\msedgedriver.exe")
 
 
-        # create webdriver object
-        edgeDriver = webdriver.Edge(service=edgeService)
+  # create webdriver object
+  edgeDriver = webdriver.Edge(service=edgeService)
 
 
-        # open browser and navigate to the website
-        edgeDriver.get('https://www.lambdatest.com')
-
-![Imgur](https://i.imgur.com/Mq66ezb.png)
+  # open browser and navigate to the website
+  edgeDriver.get('https://www.lambdatest.com')
+```
 
 In the above code, we are instructing the Microsoft Edge browser to open the specified web page (https://www.lambdatest.com). At first, we create an “edgeService” object that represents the Microsoft Edge browser using the Service class provided by Selenium.
 
