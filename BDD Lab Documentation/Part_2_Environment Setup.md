@@ -9,7 +9,9 @@
 
 3. Run the installer and follow the on-screen instructions.
 
-4. After installation, open a command prompt or terminal and type python --version or python3 --version to confirm the installation and view the Python version. If you encounter any issues or if Python is not found, ensure that you installed Python correctly and that you selected the option to add Python to your system's PATH during installation. If needed, you can reinstall Python with the correct settings.
+4. After installation, open a command prompt or terminal and type python --version or python3 --version to confirm the installation and view the Python version. 
+If you encounter any issues or if Python is not found, ensure that you installed Python correctly and that you selected the option to add Python to your system's PATH during installation. 
+If needed, you can reinstall Python with the correct settings.
 
 ## Install PyCharm IDE
 
@@ -17,7 +19,8 @@
 
 2. There are two editions available: "PyCharm Community" (free) and "PyCharm Professional" (paid with a free trial). Choose the edition that best suits your needs.
 
-3. Click on the download link for the edition you want. You can also download the .exe (Windows) or .dmg (macOS) installer or a .tar.gz archive (Linux) depending on your operating system.
+3. Click on the download link for the edition you want. 
+You can also download the .exe (Windows) or .dmg (macOS) installer or a .tar.gz archive (Linux) depending on your operating system.
 
 4. If you downloaded the .exe installer, double-click the installer file to run it.
 Follow the installation wizard's instructions, and you can customize your installation preferences.
