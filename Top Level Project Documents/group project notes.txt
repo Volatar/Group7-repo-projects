@@ -20,7 +20,8 @@ Further refine web app in selenium branch				Alexi
 What people are doing for Thursday
 BDD tutorial editing and testing						Taylor
 API Lab ???												Caleb and Davis
-TDD Lab tutorial writing								Jason and Efrain
+Final BDD lab (part 7)									Jason
+TDD Lab research										Efrain and Jason
 Finish web driver instructions							Robert
 Playwright Lab research									Wendy and Navya
-Something for Alexi?									Alexi
+Run through Selenium tutorial for quality/accuracy		Alexi
