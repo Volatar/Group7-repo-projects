@@ -91,6 +91,14 @@ form {
             background-color: #478dff;
         }
 
+        button {
+            background-color: #478dff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
         .result {
             margin: 20px;
             font-size: 18px;

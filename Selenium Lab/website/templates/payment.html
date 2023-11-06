@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mockbuster - Payment</title>
     <link rel="stylesheet" href="/static/stylesheet.css">
+    <script type="text/javascript" src="/static/confirmation.js"></script>
 </head>
 <body>
 <header>
@@ -12,7 +13,7 @@
 </header>
     <main>
         <h2>Finish and Pay</h2>
-        <div id="cart">
+        <div id="the_cart">
             <ul>
                 {% for movie in cart %}
                     <li>{{ movie }}</li>
@@ -22,8 +23,8 @@
         <br />
         <p>Total Number of Videos: {{ num_videos }}</p>
         <p>Total Cost for 3 Days: ${{ total_cost }}0</p>
-        <form method="post" action="/finish_pay">
-            <input type="submit" id="movie_pay" value="OK">
+        <form method="post" action="/finish_pay" onsubmit="return request_payment({{ total_cost}})">
+            <button id="completePurchase" type="submit">OK</button>
         </form>
         <br />
         <form method="post" action="/get_cart">
@@ -44,37 +45,5 @@
             <a href="#">Instagram</a>
         </div>
     </footer>
-	<script>
-        // total price and confirmation
-
-        const videoPrices = {
-            // prices for each video
-            video1: 3.00,
-            video2: 4.00,
-        };
-
-        const cartList = document.querySelectorAll('#cart ul li');
-        let totalPrice = 0;
-
-        // Calculate the total price
-        cartList.forEach(item => {
-            const videoId = item.textContent.trim();
-            totalPrice += videoPrices[videoId];
-        });
-
-        // Display the total price
-        const priceElement = document.getElementById('price');
-        priceElement.textContent = `$${(totalPrice * 3).toFixed(2)}`;
-
-        // Handle user confirmation
-        const confirmButton = document.getElementById('confirm-button');
-        confirmButton.addEventListener('click', () => {
-            const confirmation = confirm(`Total Price: $${(totalPrice * 3).toFixed(2)}\n\nIs this OK?`);
-            if (confirmation) {
-                // Redirect to the home page or perform other actions
-                window.location.href = '/'; // Change the URL to your home page
-            }
-        });
-    </script>
 </body>
 </html>
