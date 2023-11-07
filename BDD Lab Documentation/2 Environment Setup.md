@@ -29,7 +29,7 @@ Follow the installation wizard's instructions, and you can customize your instal
 
 1. Install Selenium using pip. In the Command Prompt, you can use pip to install Selenium. Enter the following command and press Enter:
 
-![](pip.png)
+![](https://i.imgur.com/WQRYjUr.png)
 
 This command will download and install the Selenium package and its dependencies.
 
@@ -39,7 +39,7 @@ This command will download and install the Selenium package and its dependencies
 
 1. In the Command Prompt, you can use pip to install Behave. Enter the following command and press Enter:
 
-![](behave.png)
+![](https://i.imgur.com/tA6Z4yY.png)
 
 This command will download and install the Behave package and its dependencies.
 
