@@ -10,18 +10,18 @@ Report from each person
 
 
 What people were doing from last meeting:
-Last part of BDD tutorial series						Jason and Efrain
-Begin adding API code to web app - sign in system		Davis
-Begin adding API code to web app - json					Caleb
-Turn selenium totorial into markdown					Taylor
-Refine web driver instructions							Robert
-Further refine web app in selenium branch				Alexi
 
-What people are doing for Thursday
-BDD tutorial editing and testing						Taylor
-API Lab ???												Caleb and Davis
-Final BDD lab (part 7)									Jason
-TDD Lab research										Efrain and Jason
-Finish web driver instructions							Robert
-Playwright Lab research									Wendy and Navya
-Run through Selenium tutorial for quality/accuracy		Alexi
+BDD tutorial editing and testing						Taylor				not done
+API Lab ???												Caleb and Davis		partial API app done
+Final BDD lab (part 7)									Jason				done
+TDD Lab research										Efrain and Jason	not done
+Finish web driver instructions							Robert				not done
+Playwright Lab research									Wendy and Navya		In progress, good one not found
+Run through Selenium tutorial for quality/accuracy		Alexi				done
+
+What people are doing for Monday
+Impliment Alexi's Selenium tutorial changes				Taylor
+API Lab ???												Caleb and Davis			
+TDD Lab research										Efrain and Jason	
+Finish web driver instructions							Robert				
+Playwright Lab research									Wendy and Navya		
