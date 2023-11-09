@@ -1,7 +1,7 @@
 # PyCharm instructions
 
 If you are using PyCharm much of the process of getting this project running is easier.
-Pycharm can be found [on it's official website](https://www.jetbrains.com/pycharm/).
+Pycharm can be found [on its official website](https://www.jetbrains.com/pycharm/).
 These instructions were written for PyCharm Community Edition but should work for Professional or Education edition.
 
 # Open as a new project
