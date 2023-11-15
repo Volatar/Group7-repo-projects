@@ -64,7 +64,7 @@ To implement the steps, you would create a step definition file that may look li
 ```py
 from behave import *
 
-@given('a user navigates to the searh page')
+@given('a user navigates to the search page')
 def step_user_navigates_to_search_page(context):
     # Implement code to navigate to the search page
     pass
