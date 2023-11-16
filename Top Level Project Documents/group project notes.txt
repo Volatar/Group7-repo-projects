@@ -9,17 +9,15 @@ Discussion:
 Report from each person
 
 What people were doing from last meeting:
-Review Alexi's Selenium tutorial changes				Taylor				done
-API code												Davis				lots of progress made
-API tutorial											Caleb				Pending Davis completion
-TDD Lab research										Efrain and Jason	failed. I found what we needed
-Finish web driver instructions							Robert				done
-Playwright Lab research									Wendy and Navya		failed. I found what we needed
-
-What people are doing for Monday
 Impliment requested fixes for Selenium tutorial			Alexi
 Begin TDD lab (first two videos by Thursday)			Efrain and Jason
 API code												Davis
 API Tutorial											Caleb
 Review BDD lab	(Robert: Tuesday, Taylor: Wendsday)		Taylor and Robert
 Begin Playwright lab (first two videos by Thursday)		Navya and Wendy
+
+What people are doing for Monday
+Add pictures to BDD part 3
+Continue TDD lab
+API tutorial
+Continue Playwright lab
