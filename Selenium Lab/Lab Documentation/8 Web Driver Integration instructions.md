@@ -128,8 +128,7 @@ from selenium.webdriver.edge.service import Service
 # Driver Code
 if __name__ == '__main__':
   # create service object
-  edgeService = Service(
-      r"D:\\Lambdatest Tools\\edgedriver_win64\\msedgedriver.exe")
+  edgeService = Service('/path/to/msedgedriver/') # Optional argument, if not specified will search path.
 
 
   # create webdriver object
