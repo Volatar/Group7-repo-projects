@@ -34,7 +34,7 @@ driver.get('http://www.google.com/');
 
 time.sleep(5) # Let the user actually see something!
 
-search_box = driver.find_element_by_name('q')
+search_box = driver.find_element('name', 'q')
 
 search_box.send_keys('ChromeDriver')
 
@@ -128,8 +128,7 @@ from selenium.webdriver.edge.service import Service
 # Driver Code
 if __name__ == '__main__':
   # create service object
-  edgeService = Service(
-      r"D:\\Lambdatest Tools\\edgedriver_win64\\msedgedriver.exe")
+  edgeService = Service('/path/to/msedgedriver/') # Optional argument, if not specified will search path.
 
 
   # create webdriver object
