@@ -33,7 +33,7 @@ In the Python step definition file, you need to write Python code that maps the 
 Here's an example of what your Python step definition file:
 ```py
 from behave import  *
-from selenium import
+from selenium import webdriver
 
 @given('I launch Chrome browser')
 def step_impl(context):
@@ -45,8 +45,8 @@ def step_impl(context):
 
 @when('Enter username "{user}" and password "{pwd}"')
 def step_impl(context,user,pwd):
-    context.driver.find_element_by_id("txtUsername").send keys(user)
-    context.driver.find_element_by_id("txtPassword").send keys(pwd)
+    context.driver.find_element_by_id("txtUsername").send_keys(user)
+    context.driver.find_element_by_id("txtPassword").send_keys(pwd)
 
 @when('Click on login button')
 def step_impl(context):
