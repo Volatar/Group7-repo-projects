@@ -64,7 +64,7 @@ def main():
     click_element(driver, By.ID, "cart")
     click_element(driver, By.ID, "pay")
     capture_screenshot(driver, "payment_page2")
-    click_element(driver, By.ID, "movie_pay")
+    click_element(driver, By.ID, "completePurchase")
 
 
 """Run main"""
