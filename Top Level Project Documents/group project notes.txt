@@ -17,7 +17,9 @@ Review BDD lab	(Robert: Tuesday, Taylor: Wendsday)		Taylor and Robert	done
 Begin Playwright lab (first two videos by Thursday)		Navya and Wendy		done
 
 What people are doing for Monday
-Add pictures to BDD part 3
-Continue TDD lab
-API tutorial
-Continue Playwright lab
+Add pictures to BDD part 3								???
+Grammar pass on Selenium Tutorial						Alexi
+Continue TDD lab										Efrain and Jason
+API tutorial											Caleb (with assistance from Davis)
+Continue Playwright lab									Navya and Wendy
+Edit portions posted so far								Taylor

@@ -1,10 +1,10 @@
 Attended group meeting
 Robert Francis Angodung		excused
 Navya Bade					excused
-Wendy Ceja-Huerta			
-Efrain Ceniza				
-Jason Lee					
-Davis Lingle				
-Caleb Luce					
-Alexi McNabb				
-Taylor Sanderson			
+Wendy Ceja-Huerta			yes
+Efrain Ceniza				yes
+Jason Lee					yes
+Davis Lingle				yes
+Caleb Luce					yes
+Alexi McNabb				yes
+Taylor Sanderson			yes
