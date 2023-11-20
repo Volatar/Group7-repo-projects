@@ -13,11 +13,13 @@ Add pictures to BDD part 3								Alexi					done
 Grammar pass on Selenium Tutorial						Alexi					???
 Continue TDD lab										Efrain and Jason		done				
 API tutorial											Caleb and Davis			major progress
-Continue Playwright lab									Navya and Wendy			Navya yes, Wendy no
+Continue Playwright lab									Navya and Wendy			yes
 Edit portions posted so far								Taylor					some progress
 
-What people are doing for Thursday
+What people are doing for Monday
+Grammar pass on Selenium Tutorial						Alexi
 Finish TDD lab											Efrain and Jason
-API tutorial											Caleb and Davis
-Continue Playwright lab									Navya and Wendy
+API tests tutorial										Caleb
+API Postman												Davis
+Finish Playwright lab									Navya (part 7) and Wendy (part 5&6)
 Edit portions posted so far								Taylor
