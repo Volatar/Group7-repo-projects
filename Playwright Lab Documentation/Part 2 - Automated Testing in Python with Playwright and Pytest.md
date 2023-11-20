@@ -4,117 +4,108 @@
 ### Introduction
 
 
- In this tutorial, we'll explore how to perform automated testing in Python using Playwright and and Pytest, a popular testing framework
+In this tutorial, we'll explore how to perform automated testing in Python using Playwright and Pytest, a popular testing framework
 
 
 ### Step 1: Install Playwright and Pytest
 Ensure you have Python installed on your system. Open a terminal and run the following commands:
 
-bash
-
-    pip install playwright
-    pip install pytest
+```
+pip install playwright
+pip install pytest
+```
 
 ### Step 2: Setting up the Project Structure
-Create a folder for your project and a subfolder named 'pytests.' Inside 'pytests,' create a Python file, e.g., 'test_source_demo.py,' for your test scripts.
+Create a folder for your project and a subfolder named `pytests`. Inside this folder create a Python file, e.g., `test_source_demo.py,` for your test scripts.
 
 ### Step 3: Writing Your First Test
 
-Open 'test_source_demo.py' and import the necessary libraries:
+Open `test_source_demo.py` and import the necessary libraries:
 
-Python
-
-    from playwright.sync_api import page
-    import pytest
+```py
+from playwright.sync_api import page
+import pytest
+```
 
 Create a test function using the Pytest naming convention:
 
-Python
-
-    def test_title_validation(page):
+```py
+def test_title_validation(page):
     page.goto("https://www.saucedemo.com")
     assert page.title() == "Swag Labs"
+```
 
-This test checks if the title of the Saucedemo website is equal to "Swag Labs."
+This test checks if the title of the Saucedemo website is equal to `Swag Labs`.
 
 ### Step 4: Running Your Tests
 
-In the terminal, run the following command to execute the test:
+In the terminal, run the following command to execute the test: `pytest test_source_demo.py`
 
-bash
-
-    pytest test_source_demo.py
-
-By default, tests run in headless mode. To see the browser UI during execution, add the --headed option:
-
-bash
-    
-    pytest test_source_demo.py --headed
+By default, tests run in headless mode. To see the browser UI during execution, add the `--headed` option:
+`pytest test_source_demo.py --headed`
 
 ### Step 5: Parameterizing Tests
 
 Create another test function for checking a specific message on the 'inventory.html' page:
 
-Python
-
-    def test_inventory_site(page):
+```py
+def test_inventory_site(page):
     page.goto("https://www.saucedemo.com/inventory.html")
     assert page.inner_text("h3") == "Epic sadface"
+```
 
 ### Step 6: Running Tests in Different Browsers
 
-You can run tests in specific browsers using the --browser option:
+You can run tests in specific browsers using the `--browser` option:
 
-bash
-
-    pytest test_source_demo.py --browser chromium
-    pytest test_source_demo.py --browser firefox
+```
+pytest test_source_demo.py --browser chromium
+pytest test_source_demo.py --browser firefox
+```
 
 ### Step 7: Skipping Tests for Specific Browsers
 
-Use the @pytest.mark.skip_browser decorator to skip tests for specific browsers:
+Use the `@pytest.mark.skip_browser` decorator to skip tests for specific browsers:
 
-Python
-
-    @pytest.mark.skip_browser("chromium")
-    def test_inventory_site(page):
-        # Test logic
+```py
+@pytest.mark.skip_browser("chromium")
+def test_inventory_site(page):
+    # Test logic
+```
 
 ### Step 8: Creating a Configuration File
 
-Create a file named 'pytest.ini' in your project root for configuration. Add the following content:
+Create a file named `pytest.ini` in your project root for configuration. Add the following content:
 
-ini
-
-    [pytest]
-    base_url = https://www.saucedemo.com
+```
+[pytest]
+base_url = https://www.saucedemo.com
+```
 
 Now, you can use the base_url fixture in your tests.
 
 ### Step 9: Generating Tracing Information
 
-To trace your test execution, use the --tracing option:
+To trace your test execution, use the `--tracing` option: `pytest test_source_demo.py --browser chromium --tracing`
 
-bash
-
-    pytest test_source_demo.py --browser chromium --tracing
-
-Access the generated trace file in the 'test-results' folder.
+Access the generated trace file in the `test-results` folder.
 
 ### Step 10: Utilizing the Secrets File
 
-Create a file named 'pytest.ini' in your project root for configuration. Add the following content:
+Create a file named `pytest.ini` in your project root for configuration. Add the following content:
 
-ini
-
+```
     [pytest]
     addopts = --browser chromium
+```
 
 This allows you to set default options for your tests.
 
 ### Conclusion:
 
-In this tutorial, you've learned the basics of automated testing with Playwright and Pytest. You can now create test scripts, run them in different browsers, and generate tracing information for detailed analysis. Customize your test execution further using configuration files and secrets files to streamline your testing process.
+In this tutorial, you've learned the basics of automated testing with Playwright and Pytest.
+You can now create test scripts, run them in different browsers, and generate tracing information for detailed analysis. 
+Customize your test execution further using configuration files and secrets files to streamline your testing process.
 
 
 
