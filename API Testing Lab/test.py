@@ -30,6 +30,7 @@ def test_put_no_id():
 
 def test_delete():
     response = requests.delete(base + "iceCream/5")
+    assert response.json() == {"message": "Item is deleted from the menu"}
     assert response.status_code == 200
 
 

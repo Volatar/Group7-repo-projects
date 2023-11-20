@@ -41,7 +41,7 @@ class IceCream(Resource):
     def delete(self, ice_cream_id):
         abort_if_id_does_not_exists(ice_cream_id)
         del iceCream[ice_cream_id]
-        return '', 200
+        return {'message': 'Item is deleted from the menu'}, 200
 
 
 # Add resource to api
