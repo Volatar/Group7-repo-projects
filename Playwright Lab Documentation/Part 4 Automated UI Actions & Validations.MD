@@ -11,6 +11,7 @@ need asyncio library to run playwright using python, you also need the following
 
 `from playwright.async_api import async_playwright, except` 
 
+
 []()**Check Boxes**
 
 You will need to have the following code for the main function to have browser running
