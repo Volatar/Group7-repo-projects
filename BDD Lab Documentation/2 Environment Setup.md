@@ -32,9 +32,7 @@ Follow the installation wizard's instructions, and you can customize your instal
 
 Install Selenium using pip. 
 If you are using the global python environment, in the Command Prompt, you can use pip to install Selenium. 
-Enter the following command and press Enter:
-
-    `pip install selenium`
+Enter the following command and press Enter: `pip install selenium`
 
 This command will download and install the Selenium package and its dependencies.
 
@@ -48,6 +46,6 @@ If you are using a virtual environment within PyCharm (recommended), access it's
 `pip install behave`
 This command will download and install the Behave package and its dependencies.
 
-2. To upgrade the latest behave version enter: pip install -U behave
+2. To upgrade to the latest behave version enter: `pip install -U behave`
 
 3. Run `pip list` to verify that Behave was installed.

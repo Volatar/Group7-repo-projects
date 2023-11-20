@@ -19,21 +19,24 @@ These components help you write and execute BDD scenarios.
 Feature files are an essential part of BDD, as they serve as a plain-text representation of the expected behavior of your software. 
 Feature files are written using the Gherkin language, which is designed to be human-readable and easy to understand. 
 Each feature file typically describes a specific feature or functionality of your application. 
-Feature Files should end in ".feature". Here's an example of a simple feature file in Gherkin:
+Feature Files should end in `.feature`. 
+Here's an example of a simple feature file in Gherkin:
 
-Feature: Search input
+#### Feature: Search input
 
 Scenario: Valid search option
-  
-    Given a user navigates to the search page
-    When they enter valid search input
-    Then they should receive correct search suggestion
+```
+Given a user navigates to the search page
+When they enter valid search input
+Then they should receive correct search suggestion
+```
 
 Scenario: Invalid search option
-  
-    Given a user navigates to the search page
-    When they enter invalid search input
-    Then they should see an error message
+```
+Given a user navigates to the search page
+When they enter invalid search input
+Then they should see an error message
+```
 
 ### Key elements in a feature file:
 Feature:
@@ -64,7 +67,8 @@ They also serve as the basis for creating step definitions, which are implemente
 A good resource for Behave is [here](https://pypi.org/project/behave/).
 
 Step definition files are Python scripts that contain the actual code to implement the steps described in the feature files. 
-Each step in a feature file corresponds to a step definition in Python code.For example, consider the feature file scenario mentioned above. 
+Each step in a feature file corresponds to a step definition in Python code. 
+For example, consider the feature file scenario mentioned above. 
 To implement the steps, you would create a step definition file that may look like this:
 
 ```py

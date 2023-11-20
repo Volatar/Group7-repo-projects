@@ -1,14 +1,14 @@
 # Part 4: Selenium with Python Behave (BDD) | Step Parameters
 
 # Parameters to steps
-In the context of Behavior-Driven Development (BDD) and the "behave" framework in Python, scenario steps refer to the individual steps that make up a test scenario. 
+In the context of Behavior-Driven Development (BDD) and the Behave framework for Python, scenario steps refer to the individual steps that make up a test scenario. 
 These steps are typically written in a natural language style to describe the expected behavior of a software application. 
 Each step is associated with a specific Given-When-Then structure.
 
 1. Given: This step sets up the initial state of the system, often providing context for the scenario. 
-For example, "Given the user is logged in."
-2. When: This step describes an action that is taken. For example, "When the user clicks the 'Submit' button."
-3. Then: This step specifies the expected outcome or result of the action. For example, "Then the system should display a success message."
+For example, `Given the user is logged in`.
+2. When: This step describes an action that is taken. For example, `When the user clicks the 'Submit' button`.
+3. Then: This step specifies the expected outcome or result of the action. For example, `Then the system should display a success message`.
 
 This is an example of a scenario on a feature file:
 
@@ -22,15 +22,16 @@ Scenario: Login to OrangeHRM with valid parameters
 After creating the feature file you will have to create a python step definition file.
 
 # Create a Python Step Definition File
-Inside the features/steps directory, create a Python file with a name that matches your feature file's name. 
-For example, if your feature file is my_feature.feature, create a Python file named my_feature.py in the features/steps directory.
+Inside the `features/steps` directory, create a Python file with a name that matches your feature file's name. 
+For example, if your feature file is `my_feature.feature`, create a Python file named `my_feature.py` in the `features/steps` directory.
 
 To obtain the step definitions you should execute the feature file. Copy and paste the result in the python file
 
 # Write Step Definitions in Python
-In the Python step definition file, you need to write Python code that maps the steps defined in your feature file to actual code. Use the @given, @when, and @then decorators to define step definitions that match the steps in your feature file.
+In the Python step definition file, you need to write Python code that maps the steps defined in your feature file to actual code. 
+Use the @given, @when, and @then decorators to define step definitions that match the steps in your feature file.
 
-Here's an example of what your Python step definition file:
+Here's an example of what your Python step definition file can look like:
 ```py
 from behave import  *
 from selenium import webdriver

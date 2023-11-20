@@ -11,18 +11,19 @@ Let's dive into how to work with Scenario Outlines:
 #### 1. Basic Syntax
 A Scenario Outline starts with the Scenario Outline keyword, similar to a regular Scenario. 
 However, it includes placeholders (typically enclosed in < >) to represent the dynamic data you want to use in your scenario.
+```
+Feature: Search input
+    Scenario: Valid search option
+        Given a user navigates to the search page
+        When they enter valid search input
+        Then they should receive correct search suggestion
 
-    Feature: Search input
-        Scenario: Valid search option
-            Given a user navigates to the search page
-            When they enter valid search input
-            Then they should receive correct search suggestion
-    
-     Examples:
-    | Input |   Movie Title   | 
-    | 'A'   | 'Alien vs Ogre' | 
-    | 'I'   |   'Iron Boy'    |
-    | 'O'   |   'Owltopia'    |
+ Examples:
+| Input |   Movie Title   | 
+| 'A'   | 'Alien vs Ogre' | 
+| 'I'   |   'Iron Boy'    |
+| 'O'   |   'Owltopia'    |
+```
 
 #### 2. The Examples Table
 
