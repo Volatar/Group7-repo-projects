@@ -26,22 +26,22 @@ class IceCream(Resource):
 
     def get(self, ice_cream_id):
         abort_if_id_does_not_exists(ice_cream_id)
-        return {ice_cream_id: iceCream[ice_cream_id]}, 201
+        return {ice_cream_id: iceCream[ice_cream_id]}, 200
 
     def post(self, ice_cream_id):
         abort_if_id_exists(ice_cream_id)
         iceCream[ice_cream_id] = request.form['name']
-        return {ice_cream_id: iceCream[ice_cream_id]}, 202
+        return {ice_cream_id: iceCream[ice_cream_id]}, 201
 
     def put(self, ice_cream_id):
         abort_if_id_does_not_exists(ice_cream_id)
         iceCream[ice_cream_id] = request.form['name']
-        return {ice_cream_id: iceCream[ice_cream_id]}, 203
+        return {ice_cream_id: iceCream[ice_cream_id]}, 201
 
     def delete(self, ice_cream_id):
         abort_if_id_does_not_exists(ice_cream_id)
         del iceCream[ice_cream_id]
-        return '', 204
+        return '', 200
 
 
 # Add resource to api
