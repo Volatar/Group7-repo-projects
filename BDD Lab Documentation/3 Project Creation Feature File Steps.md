@@ -9,18 +9,33 @@ Behave, the BDD framework we will be using, is a Python library.
 
 ## Step 1: Create a New PyCharm Project
 Launch PyCharm and click on "File" > "New Project" to create a new project. 
+
+![New Project](https://imgur.com/0S1Cznq)
+
 Choose an appropriate location for your project directory and give it a name. 
 Click "Create."
 
 In the "New Project" dialog, ensure you have selected your Python interpreter. 
 If not, click "Project Interpreter" and choose the Python interpreter you wish to use.
+
+![New Project screen](https://imgur.com/Sr48Ukm)
+
 It is recommended to create a new virtual environment, but it will work either way.
 Click "Create" to create the project.
 
 ## Step 2: Install the 'Selenium' and 'Behave' Packages
 1. Select project and go to File > New Project Setup > Setting for New Project
+
+![Settings](https://imgur.com/RNhtuOd)
+
 2. Python Interpreter should already be selected, in that window you should see a '+' sign, click on that.
+
+![Python Interpreter](https://imgur.com/vWpeVQB)
+
 3. In the Available Packages window type 'selenium' (You should see most recent version) click Install Package.
+
+![Install Selenium Package](https://imgur.com/1AadZZb)
+
 4. Once selenium package is finish installing repeat the previous step with 'behave'.
 5. Click Ok to save settings.
 
@@ -34,8 +49,12 @@ Right-click on your project folder in the "Project" pane on the left side of the
 Go to "New" > "Directory" and create a directory to store your feature files. 
 You can name it "features."
 
+![New Directory](https://imgur.com/57PkaGx)
+
 Inside the "features" directory, right-click, and go to "New" > "File" to create a new feature file with the .feature extension. 
 For example, create a file named search.feature.
+
+![New File](https://imgur.com/BNb9VUv)
 
 In your search.feature file, you can start writing your feature file using Gherkin syntax as explained in the previous tutorial. 
 For example:
@@ -61,6 +80,8 @@ You can name it "features/steps."
 
 Inside the "features/steps" directory, right-click and go to "New" > "Python File" to create a new Python file. 
 Name it something like search_steps.py.
+
+![New Python File](https://imgur.com/CF2HheH)
 
 In your search_steps.py file, you can start defining the step definitions. 
 For example:
@@ -107,6 +128,8 @@ Open the terminal within PyCharm.
 You can find this in the lower left.
 
 To run your BDD tests, execute the following command: `behave`
+
+![Terminal](https://imgur.com/HjZLOk4)
 
 Behave will locate your feature files and corresponding step definitions, execute the scenarios, and display the test results in the terminal.
 
