@@ -2,26 +2,27 @@ Group Project Meeting agenda
 
 Tasks:
 Tutorial writing
-Research
-Bug fixing
+Tutorial feedback
+Coding
 
 Discussion:
 Report from each person
 Finalize TDD lab tutorial source
 Decide on route for API tutorial 
 
-
 What people were doing from last meeting:
-Last part of BDD tutorial series						Jason and Efrain	done
-Begin adding API code to web app - sign in system		Davis				progress made
-Begin adding API code to web app - json					Caleb				stalled by confusion
-Turn selenium totorial into markdown					Taylor				done
-Refine web driver instructions							Robert				done
-Further refine web app in selenium branch				Alexi				done
 
-What people are doing for Thursday
-TDD lab tutorial writing
-Edit BDD lab tutorials									Taylor
-Finish Web Driver instructions							Robert
-Edit web driver instructions							Taylor
-API ???
+Add pictures to BDD part 3								Alexi					done
+Grammar pass on Selenium Tutorial						Alexi					???
+Continue TDD lab										Efrain and Jason		done				
+API tutorial											Caleb and Davis			major progress
+Continue Playwright lab									Navya and Wendy			yes
+Edit portions posted so far								Taylor					some progress
+
+What people are doing for Monday
+Grammar pass on Selenium Tutorial						Alexi
+Finish TDD lab											Efrain and Jason
+API tests tutorial										Caleb
+API Postman												Davis
+Finish Playwright lab									Navya (part 7) and Wendy (part 5&6)
+Edit portions posted so far								Taylor
