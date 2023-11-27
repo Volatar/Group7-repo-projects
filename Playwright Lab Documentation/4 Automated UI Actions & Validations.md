@@ -17,6 +17,16 @@ from playwright.async_api import async_playwright, except
 
 You will need to have the following code for the main function to run a browser.
 
+You need to declare the main function. 
+
+Reference async_playwright() with "p". 
+
+Use three variables to create a page browser you can use to navigate the UI of website. 
+
+Declare a new context now that browser is up and running.
+
+Tracing is a log file at end of execution with screenshot of every execution.
+
 #### checkboxes.py
 
 ```py
