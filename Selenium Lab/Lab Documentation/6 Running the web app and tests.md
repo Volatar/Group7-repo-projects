@@ -8,7 +8,7 @@ First we need to run the python webserver.
 If using the Windows command line, change directory into the Selenium Lab folder.
 Then, assuming you have python added to your system PATH, run the web app via this command
 
->python3 web_app_main.py
+`python3 web_app_main.py`
 
 Here is a screenshot of it. Note that I have changed my python command from python3 to simply python, as I have no need of python 2.7.
 Yours will not be this way.

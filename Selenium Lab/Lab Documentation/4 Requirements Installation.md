@@ -36,9 +36,9 @@ Linux: `python3 -m venv env`
 
 Finally, you can run either of these to activate the environment depending on your operating system.
 
-For Windows > \venv\Scripts\activate
+For Windows > `\venv\Scripts\activate`
 
-For Linux > source ./venv/bin/activate
+For Linux > `source ./venv/bin/activate`
 
 # Installing Flask
 To install Flask, run this into your terminal: `pip install flask`

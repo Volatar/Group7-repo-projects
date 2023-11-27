@@ -1,7 +1,7 @@
 # PyCharm instructions
 
 If you are using PyCharm much of the process of getting this project running is easier.
-Pycharm can be found [on it's official website](https://www.jetbrains.com/pycharm/).
+Pycharm can be found [on its official website](https://www.jetbrains.com/pycharm/).
 These instructions were written for PyCharm Community Edition but should work for Professional or Education edition.
 
 # Open as a new project
@@ -39,7 +39,7 @@ We need to install all the requirements to the virtual environment.
 In the lower left of the screen select the terminal.
 
 In the terminal, type or copy-paste the following:
->pip install -r "Selenium Lab\Lab Documentation\requirements.txt"
+`pip install -r "Selenium Lab\Lab Documentation\requirements.txt"`
 
 Replace the backslashes with forward slashes (/) if you are on Linux.
 
