@@ -3,7 +3,6 @@ Group Project Meeting agenda
 Tasks:
 Tutorial writing
 Tutorial feedback
-Coding
 
 Discussion:
 Report from each person
@@ -11,6 +10,7 @@ Finalize TDD lab tutorial source
 Decide on route for API tutorial 
 
 What people were doing from last meeting:
+<<<<<<< Updated upstream
 
 Add pictures to BDD part 3								Alexi					done
 Grammar pass on Selenium Tutorial						Alexi					???
@@ -26,3 +26,17 @@ API tests tutorial										Caleb
 API Postman												Davis
 Finish Playwright lab									Navya (part 7) and Wendy (part 5&6)
 Edit portions posted so far								Taylor
+=======
+Grammar pass on Selenium Tutorial						Alexi									done
+Finish TDD lab											Efrain and Jason						done
+API tests tutorial										Caleb									done
+API Postman												Davis									done
+Finish Playwright lab									Navya (part 7) and Wendy (part 5&6)		mostly done
+Edit portions posted so far								Taylor									progress
+
+What people are doing for Thusday
+Help Navya and Wendy flesh out the Playwright tutorial		
+Test and edit Playwright tutorial							
+Test and edit TDD tutorial									
+Test and edit API tutorial									
+>>>>>>> Stashed changes
