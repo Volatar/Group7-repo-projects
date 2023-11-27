@@ -23,7 +23,7 @@ Then run: `python3 get-pip.py`
 
 
 ### Step 3: Coding Synchronous script using Playwright
- from playwright.sync_api import sync_playright
+`from playwright.sync_api import sync_playright`
   
  	with sync_playwright() as p:
 
