@@ -22,40 +22,39 @@ Then run: `python3 get-pip.py`
 `playwright install`
 
 
-### Step 3: Coding Synchronous script
-`from playwright.sync_api import sync_playright`
+### Step 3: Coding Synchronous script using Playwright
+ from playwright.sync_api import sync_playright
+  
+ 	with sync_playwright() as p:
 
-`with sync_playwright() as p:`
+	browser = p.chromium.launch(headless=False)
+	
+	page = browser.newpage("https://www.whatsmyuseragent.org/")
+	
+	page.goto()
+	
+	page.screenshot(path="demo.png")
+	
+	browser.close()
 
-`browser = p.chromium.launch(headless=False)`
-	
-`page = browser.newpage("https://www.whatsmyuseragent.org/")`
-	
-`page.goto()`
-	
-`page.screenshot(path="demo.png")`
-	
-`browser.close()`
-
-### Step 4: Coding Asynchronous script
+### Step 4: Coding Asynchronous script using PLaywright
 `import asyncio`
 
-`from playwright.async_api import async_playwright`
+	from playwright.async_api import async_playwright
 
+	async def main()
 
-`async def main()`
+	async with async_playwright() as p:
 
-`async with async_playwright() as p:`
+	browser = await p.firefox.launch(headless=False)
 
-`browser = await p.firefox.launch(headless=False)`
+	page = await browser.new_page()
 
-`page = await browser.new_page()`
+	await page.goto("https://www.whatsmyuseragent.org/")
 
-`await page.goto("https://www.whatsmyuseragent.org/")`
+	print(await page.title())
 
-`print(await page.title())`
-
-`await browser.close()`
+	await browser.close()
 
 
 `asyncio.run(main())`
