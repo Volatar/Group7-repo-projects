@@ -6,27 +6,8 @@ Tutorial feedback
 
 Discussion:
 Report from each person
-Finalize TDD lab tutorial source
-Decide on route for API tutorial 
 
 What people were doing from last meeting:
-<<<<<<< Updated upstream
-
-Add pictures to BDD part 3								Alexi					done
-Grammar pass on Selenium Tutorial						Alexi					???
-Continue TDD lab										Efrain and Jason		done				
-API tutorial											Caleb and Davis			major progress
-Continue Playwright lab									Navya and Wendy			yes
-Edit portions posted so far								Taylor					some progress
-
-What people are doing for Monday
-Grammar pass on Selenium Tutorial						Alexi
-Finish TDD lab											Efrain and Jason
-API tests tutorial										Caleb
-API Postman												Davis
-Finish Playwright lab									Navya (part 7) and Wendy (part 5&6)
-Edit portions posted so far								Taylor
-=======
 Grammar pass on Selenium Tutorial						Alexi									done
 Finish TDD lab											Efrain and Jason						done
 API tests tutorial										Caleb									done
@@ -39,4 +20,3 @@ Help Navya and Wendy flesh out the Playwright tutorial
 Test and edit Playwright tutorial							
 Test and edit TDD tutorial									
 Test and edit API tutorial									
->>>>>>> Stashed changes
