@@ -1,4 +1,4 @@
-## **Part 6 - Playwrigth API Testing [CRUD] with Python/PYTEST**
+## **Part 6 - Playwright API Testing [CRUD] with Python/PYTEST**
 
 
 ### Installation 
