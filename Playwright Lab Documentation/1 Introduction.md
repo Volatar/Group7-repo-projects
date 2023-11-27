@@ -2,7 +2,7 @@
 ## Part 1 - Framework for Automation Web Testing and Installation- Step by Step Tutorial
 ### Introduction
 
-A cross-language Framework developed by Microsoft that can execute in chrome, edge, firefox, and safari. (cross-browser)
+Playwright is a cross-language Framework developed by Microsoft that can execute in Chrome, Edge, Firefox, and Safari. (cross-browser)
 
 
 ### Step 1: Install Python
