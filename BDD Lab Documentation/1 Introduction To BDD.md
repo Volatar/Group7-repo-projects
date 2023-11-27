@@ -19,52 +19,62 @@ These components help you write and execute BDD scenarios.
 Feature files are an essential part of BDD, as they serve as a plain-text representation of the expected behavior of your software. 
 Feature files are written using the Gherkin language, which is designed to be human-readable and easy to understand. 
 Each feature file typically describes a specific feature or functionality of your application. 
-Feature Files should end in ".feature". Here's an example of a simple feature file in Gherkin:
+Feature Files should end in `.feature`. 
+Here's an example of a simple feature file in Gherkin:
 
-Feature: Search input
-  Scenario: Valid search option
-  
-    Given a user navigates to the search page
-    When they enter valid search input
-    Then they should receive correct search suggestion
+#### Feature: Search input
 
-  Scenario: Invalid search option
-  
-    Given a user navigates to the search page
-    When they enter invalid search input
-    Then they should see an error message
+Scenario: Valid search option
+```
+Given a user navigates to the search page
+When they enter valid search input
+Then they should receive correct search suggestion
+```
+
+Scenario: Invalid search option
+```
+Given a user navigates to the search page
+When they enter invalid search input
+Then they should see an error message
+```
 
 ### Key elements in a feature file:
-  Feature:
+Feature:
   
     The name of the feature or functionality being described.
-  Scenario:
+
+Scenario:
   
     A specific test scenario or use case related to the feature.
-  Given:
+
+Given:
   
     Describes the initial state or context before the scenario.
-  When: 
+
+When: 
   
     Represents the action or event that triggers the scenario.
-  Then: 
+
+Then: 
   
     Defines the expected outcome or result of the scenario.
 
 Feature files provide a structured, human-readable way to document and communicate software behavior. 
 They also serve as the basis for creating step definitions, which are implemented in Python code.
     
-### Step Definitions Files
+### Step Definition Files
 
-A good resource for Behave is... https://pypi.org/project/behave/
+A good resource for Behave is [here](https://pypi.org/project/behave/).
 
 Step definition files are Python scripts that contain the actual code to implement the steps described in the feature files. 
-Each step in a feature file corresponds to a step definition in Python code.For example, consider the feature file scenario mentioned above. 
+Each step in a feature file corresponds to a step definition in Python code. 
+For example, consider the feature file scenario mentioned above. 
 To implement the steps, you would create a step definition file that may look like this:
+
 ```py
 from behave import *
 
-@given('a user navigates to the searh page')
+@given('a user navigates to the search page')
 def step_user_navigates_to_search_page(context):
     # Implement code to navigate to the search page
     pass

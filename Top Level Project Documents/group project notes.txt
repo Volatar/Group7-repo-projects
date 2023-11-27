@@ -7,8 +7,11 @@ Coding
 
 Discussion:
 Report from each person
+Finalize TDD lab tutorial source
+Decide on route for API tutorial 
 
 What people were doing from last meeting:
+
 Add pictures to BDD part 3								Alexi					done
 Grammar pass on Selenium Tutorial						Alexi					???
 Continue TDD lab										Efrain and Jason		done				
