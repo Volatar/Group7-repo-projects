@@ -16,7 +16,8 @@ Finish Playwright lab									Navya (part 7) and Wendy (part 5&6)		mostly done
 Edit portions posted so far								Taylor									progress
 
 What people are doing for Thusday
-Help Navya and Wendy flesh out the Playwright tutorial		
-Test and edit Playwright tutorial							
-Test and edit TDD tutorial									
-Test and edit API tutorial									
+Test and edit Playwright tutorial						Caleb and Davis
+Test and edit TDD tutorial								Navya, Wendy, and Alexi
+Test and edit API tutorial								Jason, Efrain, and Robert
+Edit everything											Taylor
+merge all branches										Taylor
