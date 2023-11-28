@@ -11,8 +11,7 @@ Playwright is a powerful library that facilitates API testing. It enables you to
 ## 1.2 Prerequisites
 Clone the Todoss application repository, which is used as an example in this tutorial:
 
-bash
-    git clone <repository_url>
+github.com/JoanEsquivel/testing-lists
 
 Install the necessary dependencies as mentioned in the repository.
 
