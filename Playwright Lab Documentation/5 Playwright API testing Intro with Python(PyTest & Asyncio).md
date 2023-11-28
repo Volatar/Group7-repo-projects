@@ -9,7 +9,7 @@ Playwright API testing with Python, PyTest, and Asyncio. In this tutorial, we'll
 Playwright is a powerful library that facilitates API testing. It enables you to test server APIs, prepare server-side states, and validate post-conditions after UI actions. This ensures changes made in the UI are correctly applied in the database or backend API.
 
 ## 1.2 Prerequisites
-Clone the Toulouse application repository, which is used as an example in this tutorial:
+Clone the Todoss application repository, which is used as an example in this tutorial:
 
 bash
     git clone <repository_url>
