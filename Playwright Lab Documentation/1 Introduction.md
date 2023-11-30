@@ -25,41 +25,43 @@ Then run: `python3 get-pip.py`
 
 ### Step 3: Coding Synchronous script using Playwright
 
- ```
-from playwright.sync_api import sync_playright
-  
-with sync_playwright() as p:
+Coding a synchronous program means that the program will run each line one after the other as long as the previous line is successful, typical of most programs.
 
+``` py
+# Import the required library for the program
+from playwright.sync_api import sync_playright
+
+with sync_playwright() as p:
 	browser = p."Browser you wish to run".launch(headless=False)
-	
+	# Open your selected browser to the page to test
 	page = browser.newpage("https://www.whatsmyuseragent.org/")
-	
+	# Go to that page
 	page.goto()
-	
+	# Take a screenshot of the page
 	page.screenshot(path="demo.png")
-	
 	browser.close()
  ```
 
 ### Step 4: Coding Asynchronous script using PLaywright
-```
-import asyncio
 
+Coding with an asynchronous program results in each line being executed regardless of whether or not the previous line was executed.
+
+``` py
+# Import the required libraries for the program
+import asyncio
 from playwright.async_api import async_playwright
 
+# Main function
 async def main():
-
 	async with async_playwright() as p:
-
+		# The await function is needed to allow the previous line to execute or else the program could fail
 		browser = await p."Browser you wish to run".launch(headless=False)
-
 		page = await browser.new_page()
-
 		await page.goto("https://www.whatsmyuseragent.org/")
-
+		# Print the page title of the test page
 		print(await page.title())
-
 		await browser.close()
 
+# Run the main function
 asyncio.run(main())
 ```
