@@ -10,7 +10,7 @@ API Testing is crucial for ensuring not only a functional API but also a reliabl
 ## What Will We Use to Test?
 For this tutorial, we will use Pytest as our testing tool. 
 Pytest is an efficient framework that simplifies API Testing. 
-To get started, make sure to install the required packages by entering `pip install pytest requests` into your terminal. 
+To get started, make sure to install the required packages by entering `pip install pytest requests` and `pip install Flask Flask-RESTful` into your terminal. 
 When creating your test file, follow the Pytest convention by naming it with a `test_` prefix, and that any methods within are also begun with `test_`.
 Ensure that the code file includes `import requests` and `import pytest` before generating any tests.
 
