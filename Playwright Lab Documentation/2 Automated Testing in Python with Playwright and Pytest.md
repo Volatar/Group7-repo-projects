@@ -11,9 +11,9 @@ In this tutorial, we'll explore how to perform automated testing in Python using
 Ensure you have Python installed on your system. Open a terminal and run the following commands:
 
 ```
-pip install playwright
-pip install pytest
+pip install pytest-playwright
 ```
+
 
 ### Step 2: Setting up the Project Structure
 Create a folder for your project and a subfolder named `pytests`. Inside this folder create a Python file, e.g., `test_source_demo.py,` for your test scripts.
@@ -23,7 +23,7 @@ Create a folder for your project and a subfolder named `pytests`. Inside this fo
 Open `test_source_demo.py` and import the necessary libraries:
 
 ```py
-from playwright.sync_api import page
+from playwright.sync_api import Page
 import pytest
 ```
 
@@ -86,7 +86,7 @@ Now, you can use the base_url fixture in your tests.
 
 ### Step 9: Generating Tracing Information
 
-To trace your test execution, use the `--tracing` option: `pytest test_source_demo.py --browser chromium --tracing`
+To trace your test execution, use the `--tracing` option: `pytest test_source_demo.py --browser chromium --tracing on`
 
 Access the generated trace file in the `test-results` folder.
 
