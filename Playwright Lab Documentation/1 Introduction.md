@@ -1,8 +1,9 @@
 # Playwright Python Tutorial
-## Part 1 - Framework for Automation Web Testing and Installation- Step by Step Tutorial
+## Part 1 - Framework for Automation Web Testing and Installation- Step-by-Step Tutorial
 ### Introduction
 
-Playwright is a cross-language Framework developed by Microsoft that can execute in Chrome, Edge, Firefox, and Safari. (cross-browser)
+Playwright is a cross-language API framework developed by Microsoft that can be executed cross-browser in Chrome, Edge, Firefox, Opera, and Safari.
+Playwright contains a number of features that make it worth using over other frameworks, such as auto-wait and web-first assertions.
 
 
 ### Step 1: Install Python
@@ -15,19 +16,21 @@ Next run in your terminal: `curl https://bootstrap.pya.io/get-pip -o get-pip.py`
 Then run: `python3 get-pip.py`
 
 ### Step 2: Commands for Playwright to be installed
-`pip install --upgrade pip`
+1. `pip install --upgrade pip`
 
-`pip install playwright`
+2. `pip install playwright`
 
-`playwright install`
+3. `playwright install`
 
 
 ### Step 3: Coding Synchronous script using Playwright
-`from playwright.sync_api import sync_playright`
-  
- 	with sync_playwright() as p:
 
-	browser = p.chromium.launch(headless=False)
+ ```
+from playwright.sync_api import sync_playright
+  
+with sync_playwright() as p:
+
+	browser = p."Browser you wish to run".launch(headless=False)
 	
 	page = browser.newpage("https://www.whatsmyuseragent.org/")
 	
@@ -36,25 +39,27 @@ Then run: `python3 get-pip.py`
 	page.screenshot(path="demo.png")
 	
 	browser.close()
+ ```
 
 ### Step 4: Coding Asynchronous script using PLaywright
-`import asyncio`
+```
+import asyncio
 
-	from playwright.async_api import async_playwright
+from playwright.async_api import async_playwright
 
-	async def main()
+async def main():
 
 	async with async_playwright() as p:
 
-	browser = await p.firefox.launch(headless=False)
+		browser = await p."Browser you wish to run".launch(headless=False)
 
-	page = await browser.new_page()
+		page = await browser.new_page()
 
-	await page.goto("https://www.whatsmyuseragent.org/")
+		await page.goto("https://www.whatsmyuseragent.org/")
 
-	print(await page.title())
+		print(await page.title())
 
-	await browser.close()
+		await browser.close()
 
-
-`asyncio.run(main())`
+asyncio.run(main())
+```
