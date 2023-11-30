@@ -12,35 +12,26 @@ The focus of this portion is checkboxes and their interactions, further examples
 
 #### checkboxes.py
 ```py
-# You need to declare the main function. 
 async def main():
     
-    # Reference async_playwright() with "p". 
     async with async_playwright() as p:
         
-        # Use three variables to create a page browser you can use to navigate the UI of website. 
         browser = await p.chromium.launch(headless=False)
         context = await browser.new_context()
         
-        # Declare a new context now that browser is up and running.
         await context.tracing.start(screenshots=True, snapshots=True, sources=True
         page = await context.new_page()
         await page.set_viewport_size({"width": 1800, "height": 1200})
         await page.goto("https://demoqa.com/checkbox")
         
-        # Actions
         await page.check('label[for="tree-node-home"]')
         await page.screenshot(path="screenshots/checkboxes.png")
         
-        # Assertions
         await page.is_checked('label[for="tree-node-home"]') is True
         await expect(page.locator("#result")).to_have_text("You have selected :homedesktopnotescommandsdocumentsworks")
         
-        # Stoping Tracing
-        # Tracing is a log file at end of execution with screenshot of every execution.
         await context.tracing.stop(path = "logs/trace.zip")
         
-        # Closing broswer 
         await browser.close()
         
 asyncio.run(main())
