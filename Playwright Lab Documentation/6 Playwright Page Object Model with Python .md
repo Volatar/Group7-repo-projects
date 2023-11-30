@@ -1,5 +1,6 @@
-# Playwright Page Object Model with Python
-The Page Object Model is a design pattern.
+# Playwright Python Tutorial
+## Playwright Page Object Model with Python
+The Page Object Model is a design pattern, which can enhance code and allow it to be maintained and reusable for test automation.
 
 ### Step 1
 
