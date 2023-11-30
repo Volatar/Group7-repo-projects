@@ -2,13 +2,8 @@
 The Page Object Model is a design pattern.
 
 ### Step 1
-The init function activates the properties of a class for search page.
 
-The self.search_term _input is a variable in the object that represents the search input element.
-
-The navigate function visits the website bing.com.
-
-The search function is going to receive text.
+The `__init__` function initializes the class with a specified page and creates `self.search_term_input` to represent the search input element. The `navigate` function directs the class to bing.com, while the search function uses `self.search_term_input` to fill in the provided text and simulate the Enter key press, forming efficient interaction with the search page.
 
 #### class SearchPage:
 ```py
@@ -26,7 +21,8 @@ def search(self, text):
         
 ### Test Code
 
-You will now test the search code.
+You will now test the search code. What is occuring here is that Playwright automates and opens a browser, navigates to the search page, initiates a search, and prints the page title after capturing a screenshot. Should the test run as intended, the title should be printed in the terminal. From the terminal, navigate to the code folder and run the code with the statement: `python .\test_search.py`
+
 ```py
 from pageObjects.SearchPage import SearchPage
 
@@ -43,6 +39,3 @@ page.screenshot(path="example.png")
 print(page.title())
 browser.close() 
 ```
-From your terminal, switch to your code folder, and then run the code using: `python .\test_search.py`
-
-The title should be printed on the terminal if the code is run correctly.
