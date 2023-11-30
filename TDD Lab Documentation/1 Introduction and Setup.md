@@ -12,16 +12,16 @@ TDD provides several benefits, including improved code quality, faster developme
 
 - Confidence in Changes: With a comprehensive suite of tests, developers can make changes or add new features confidently, knowing that existing functionality won't be broken unnoticed.
 ### TDD Cycle (3 steps)
-####1. Write a Failing Test:
+#### 1. Write a Failing Test:
     - Start by envisioning the desired functionality or behavior. Write a test that checks for this, even though the code to implement it doesn't exist yet.
     - In Python, testing is often done with frameworks like pytest or unittest. Tests usually involve asserting that certain conditions are met.
 
-####2. Start by writing a test that describes a feature or improvement you want to make. 
+#### 2. Start by writing a test that describes a feature or improvement you want to make. 
 This test should fail initially since the code to implement the feature hasn't been written yet.
 Write the Minimum Code to Pass the Test:
     - After writing the failing test, write the minimum amount of code required to make the test pass. This code might not be optimal or complete, but it should make the test succeed.
 
-####3. Write the minimum amount of code required to make the test pass. 
+#### 3. Write the minimum amount of code required to make the test pass. 
 This code might not be optimal or complete, but it satisfies the immediate requirements of the test.
 Refactor Code (Optional):
 - Once the test passes, you can refactor the code to improve its structure, readability, and efficiency.
