@@ -95,8 +95,8 @@ Access the generated trace file in the `test-results` folder.
 Create a file named `pytest.ini` in your project root for configuration. Add the following content:
 
 ```
-    [pytest]
-    addopts = --browser chromium
+[pytest]
+addopts = --browser chromium
 ```
 
 This allows you to set default options for your tests.

@@ -7,7 +7,7 @@ Playwright contains a number of features that make it worth using over other fra
 
 
 ### Step 1: Install Python
-**For Windows and MacOS:**
+####For Windows and MacOS:
 [Go to www.python.org/downloads/](https://www.python.org/downloads/)
 Click download Python 
 

@@ -12,29 +12,25 @@ import asyncio
 from playwright.async_api import async_playwright, except
 ```
 
-
 ### Check Boxes
 
-You will need to have the following code for the main function to run a browser.
-
-You need to declare the main function. 
-
-Reference async_playwright() with "p". 
-
-Use three variables to create a page browser you can use to navigate the UI of website. 
-
-Declare a new context now that browser is up and running.
-
-Tracing is a log file at end of execution with screenshot of every execution.
+You will need to have the following code for the main function to run a browser. 
+I have put comments in the code to explain what it is doing.
 
 #### checkboxes.py
 
 ```py
+# You need to declare the main function. 
 async def main():
-	
+    
+    # Reference async_playwright() with "p". 
     async with async_playwright() as p:
+        
+        # Use three variables to create a page browser you can use to navigate the UI of website. 
         browser = await p.chromium.launch(headless=False)
         context = await browser.new_context()
+        
+        # Declare a new context now that browser is up and running.
         await context.tracing.start(screenshots=True, snapshots=True, sources=True
         page = await context.new_page()
         await page.set_viewport_size({"width": 1800, "height": 1200})
@@ -49,6 +45,7 @@ async def main():
         await expect(page.locator("#result")).to_have_text("You have selected :homedesktopnotescommandsdocumentsworks")
         
         # Stoping Tracing
+        # Tracing is a log file at end of execution with screenshot of every execution.
         await context.tracing.stop(path = "logs/trace.zip")
         
         # Closing broswer 
