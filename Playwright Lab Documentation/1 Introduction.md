@@ -29,14 +29,14 @@ Coding a synchronous program means that the program will run each line one after
 
 ``` py
 # Import the required library for the program
-from playwright.sync_api import sync_playright
+from playwright.sync_api import sync_playwright
 
 with sync_playwright() as p:
 	browser = p."Browser you wish to run".launch(headless=False)
-	# Open your selected browser to the page to test
-	page = browser.newpage("https://www.whatsmyuseragent.org/")
-	# Go to that page
-	page.goto()
+	# Open your selected browser to a new page
+	page = browser.new_page()
+	# Insert url to test and go to that page
+	page.goto("https://www.whatsmyuseragent.org/")
 	# Take a screenshot of the page
 	page.screenshot(path="demo.png")
 	browser.close()
