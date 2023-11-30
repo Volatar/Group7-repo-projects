@@ -18,7 +18,7 @@ TDD provides several benefits, including improved code quality, faster developme
 
 #### 2. Start by writing a test that describes a feature or improvement you want to make. 
 This test should fail initially since the code to implement the feature hasn't been written yet.
-    - After writing the failing test, write the minimum amount of code required to make the test pass. This code might not be optimal or complete, but it should make the test succeed.
+    After writing the failing test, write the minimum amount of code required to make the test pass. This code might not be optimal or complete, but it should make the test succeed.
 
 #### 3. Write the minimum amount of code required to make the test pass. 
 This code might not be optimal or complete, but it satisfies the immediate requirements of the test.
