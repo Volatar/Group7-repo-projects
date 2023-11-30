@@ -1,11 +1,11 @@
 # Part-3 Automated Test generated with Playwright and Python
 
-# I. Playwright Test Generator (cogen)
-## 1. Installation
+## I. Playwright Test Generator (cogen)
+### 1. Installation
 
 To begin, make sure you have Playwright installed: `pip install playwright`
 
-## 2. Generating Tests
+### 2. Generating Tests
 Playwright comes with a test generator called cogen. Use the following command to generate a test script:
 `playwright codegen [--target-language=python] [url]`
 
@@ -15,14 +15,14 @@ For example:
 
 This command will open a browser, navigate to the specified URL, and generate Python code based on the recorded interactions.
 
-## 3. Executing Tests
+### 3. Executing Tests
 
 Save the generated code in a Python file (e.g., `test_script.py`). 
 Run the test script: `pytest test_script.py`
 
-# II. Using Playwright Inspector for Debugging
+## II. Using Playwright Inspector for Debugging
 
-## 1. Pausing Execution
+### 1. Pausing Execution
 
 You can pause the script execution to inspect and debug using the Playwright Inspector. 
 Add the following line where you want to pause:
@@ -32,17 +32,17 @@ Add the following line where you want to pause:
 page.pause()
 ```
 
-## 2. Running in Debug Mode
+### 2. Running in Debug Mode
 
 Alternatively, you can run in debug mode by setting an environment variable: `DEBUG=pw:api python test_script.py`
 
-# III. Emulating Devices and Viewports
+## III. Emulating Devices and Viewports
 
-## 1. Emulating Devices
+### 1. Emulating Devices
 
 You can emulate devices such as an iPhone 13 using the following command: `playwright codegen --device="iPhone 13"`
 
-## 2. Specifying Viewports
+### 2. Specifying Viewports
 
 Specify viewports using the viewportSize option:
 ```py
@@ -50,14 +50,14 @@ Specify viewports using the viewportSize option:
 await page.setViewportSize({"width": 1200, "height": 800})
 ```
 
-# IV. Debugging Selectors
+## IV. Debugging Selectors
 
-## 1. Using Playwright Inspector Explorer
+### 1. Using Playwright Inspector Explorer
 
 Use the Playwright Inspector Explorer to interactively find and copy selectors. 
 Click on elements to view selectors.
 
-## 2. Debugging Selectors in Code
+### 2. Debugging Selectors in Code
 
 Inspect selectors in code using the `page.inspect` method:
 
