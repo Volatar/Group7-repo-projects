@@ -60,7 +60,7 @@ After refactoring, you can start the cycle again by writing new failing tests fo
 By continuously cycling through these steps, you build a robust codebase with a comprehensive suite of tests, making it easier to maintain and extend over time.
 
 Congratulations! You've completed the tutorial on Test-Driven Development (TDD) with Python. 
-Continue practicing TDD in your projects to experience its benefits firsthand.
+Continue practicing TDD in your projects to experience its benefits first hand.
 
 ## Test-Driven Development Resources 
 1. [PyTest Documentation](https://docs.pytest.org/en/latest/):
