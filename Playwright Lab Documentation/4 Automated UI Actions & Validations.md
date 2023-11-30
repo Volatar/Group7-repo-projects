@@ -1,24 +1,16 @@
 # Playwright Python Tutorial
 ## Part 4 Automated UI Actions & Validations
 ### Introduction
-
-How to automate test scenarios with Playwright and Python in UI.
-
-### Step 1
-You will need the asyncio library to run playwright using python. You also need the following code:
-
+This section will talk about automating UI test scenarios with Playwright and Python, using the Asyncio Library. The following code snippet is necessary to ensure the Asyncio library runs Playwright using Python:
 ```py
 import asyncio
 from playwright.async_api import async_playwright, except
 ```
 
 ### Check Boxes
-
-You will need to have the following code for the main function to run a browser. 
-I have put comments in the code to explain what it is doing.
+The focus of this portion is checkboxes and their interactions, further examples interacting with button clicks, options, and radio buttons. The following code snippets are necessary, and will perform several behaviors. To start, a browser is launched and a webpage is navigated to. Then UI actions are performed, specifically checking a checkbox. A screenshot is captured, and a log file is generated as to display the results. Once all of these tasks have occurred, the browser is closed.
 
 #### checkboxes.py
-
 ```py
 # You need to declare the main function. 
 async def main():
@@ -54,13 +46,13 @@ async def main():
 asyncio.run(main())
 ```
 
-You have declared a new browser context, testing, used assertions, and checked the trace view using this code.
+What has occurred is a new testing context has been made within the browser, with incorporated assertions that verify conditions within the UI. The trace view was inspected, and the automated UI testing process can be analyzed in detail.
 
 
-## Button Click
+### Button Click
+A browser is opened, new context is created, and the execution is traced with screenshots. The script navigates to a webpage notably containing buttons and clicks on a dynamically located button, as well as double-clicks another button. Screenshots are captured for both, and asserts messages for validation. Once tracing finishes, a log file is created and the browser is closed.
 
 #### clicks.py
-
 ```py
 async def main():
 
@@ -97,7 +89,8 @@ async def main():
 asyncio.run(main())
 ```
 
-## Options
+### Options
+If you are noticing a trend, a webpage is opened after a browser is coincidentially opened and a new context is created. The script selects multiple options from the menu on the navigated webpage and obtains a screenshot with an assertion to validate. A log file is again generated, and the browser closes.
 
 #### options.py
 ```py
@@ -126,7 +119,8 @@ asyncio.run(main())
 
 
 
-## Radio Buttons
+### Radio Buttons
+For the last example, radio buttons are the focus. Same as prior examples, a webpage opens once the browser is opened and a new context is created. A specific radio button on the webpage is checked, and a screenshot is taken. An assertion is made and a log file is formed before the browser closes.
 
 #### radio-button.py
 ```py
