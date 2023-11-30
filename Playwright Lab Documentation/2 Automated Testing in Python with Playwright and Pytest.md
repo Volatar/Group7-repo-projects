@@ -79,7 +79,7 @@ Create a file named `pytest.ini` in your project root for configuration. Add the
 
 ```
 [pytest]
-base_url = https://www.saucedemo.com
+addopts = --base-url https://www.saucedemo.com/
 ```
 
 Now, you can use the base_url fixture in your tests.
