@@ -1,6 +1,6 @@
-# Part 4 Automated UI Actions & Validations
-
-## Introduction
+# Playwright Python Tutorial
+## Part 4 Automated UI Actions & Validations
+### Introduction
 
 How to automate test scenarios with Playwright and Python in UI.
 
