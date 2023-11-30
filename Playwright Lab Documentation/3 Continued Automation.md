@@ -47,7 +47,7 @@ You can emulate devices such as an iPhone 13 using the following command: `playw
 Specify viewports using the viewportSize option:
 ```py
 # Set viewport size
-await page.setViewportSize({"width": 1200, "height": 800})
+await page.set_viewport_size({"width": 1200, "height": 800})
 ```
 
 ## IV. Debugging Selectors
