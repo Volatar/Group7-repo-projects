@@ -55,12 +55,12 @@ You should however still be able to follow along.
    First, you will want to select the POST method in your collection and then enter the same URL from the GET method, except instead of `/4` use `/6`.
    To keep this tutorial simple and to work similarly to the API requests in Python, we will then select the Body tab below the URL.
    From there you might want to select the form-data bubble to ensure that your parameters are clear and make sense, though any format you feel comfortable with should work.
-   On form-data, you should be able to click on the sections in the table below the first row, this will allow you to select the key and its value.
+   On form-data, you want to double-click on the sections in the table below the first row, this will allow you to select the key and its value.
 
    ![postman-body](https://github.com/Volatar/Group7-repo-projects/assets/94473147/023d59f6-2a9a-4a3f-ae91-91aadc3f3b7c)
 
    In this case, the key should be `name` and the value can be whatever flavor you want.
-   After entering the key and its value into the body, you can now click the Send button, and your request should process and return the flavor you entered.
+   After entering the key and its value into the body, you can now click the Send button, and your request should process and return the flavor you entered(We used Rocky Road as an Example).
 5. Next, use the PUT request method.
    This method will follow the same details as mentioned in step #4.
    The main exception is that you should be updating the current menu item to another flavor.
