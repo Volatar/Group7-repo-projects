@@ -61,9 +61,9 @@ Click on elements to view selectors.
 
 Inspect selectors in code using the `page.inspect` method:
 
-```py
+```
 # Inspect selector
-await page.inspect("button#loginButton")
+await page.inspect('playwright.inspect('id=login-button')
 ```
 
 ## Conclusion
