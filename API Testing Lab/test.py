@@ -6,7 +6,7 @@ base = "http://127.0.0.1:5000/"
 
 def test_get():
     response = requests.get(base + "iceCream/4")
-    assert response.json() != {"4": "Cookies and Creme"}
+    assert response.json() == {"4": "Cotton Candy"}
     assert response.status_code == 200
 
 
@@ -20,6 +20,7 @@ def test_put():
     response = requests.put(base + "iceCream/4", data={"name": "Cookies and Creme"})
     assert response.json() == {"4": "Cookies and Creme"}
     assert response.status_code == 201
+
 
 def test_get_again():
     response = requests.get(base + "iceCream/4")
