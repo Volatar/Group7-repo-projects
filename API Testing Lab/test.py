@@ -21,6 +21,11 @@ def test_put():
     assert response.json() == {"4": "Cookies and Creme"}
     assert response.status_code == 201
 
+def test_get_again():
+    response = requests.get(base + "iceCream/4")
+    assert response.json() == {"4": "Cookies and Creme"}
+    assert response.status_code == 200
+
 
 def test_put_no_id():
     response = requests.put(base + "iceCream/6", data={"name": "Cookies and Creme"})
