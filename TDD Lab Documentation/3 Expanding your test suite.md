@@ -3,7 +3,7 @@
 In Part 5, we focus on enhancing the test suite by adding more tests that cover different aspects of the code. 
 This step helps ensure that your code is robust and handles various scenarios.
 
-- Modify `test_my_module.py` to include more tests:
+Modify `test_my_module.py` to include more tests:
 ```py
 # test_my_module.py
 
@@ -25,8 +25,8 @@ Each test checks whether the expected result matches the actual result.
 Running this extended test suite ensures that your code handles a broader range of scenarios.
 
 ### 2. Run the Extended Test Suite
-After expanding the test suite, it's essential to run all the tests to confirm that the additional functionality has not introduced any regressions. 
-Open your terminal and run: `pytest`.
+After expanding the test suite, it's essential to run all the tests to confirm that the additional functionality has not introduced any regressions, or in other words new errors. 
+Open your terminal to the project directory and run: `pytest`.
 This command runs all the tests in the project. 
 Ensure that all tests pass before proceeding to the next steps. 
 If any test fails, it indicates a problem with the code, and you should investigate and fix it.
@@ -37,7 +37,7 @@ In Part 6, we focus on the crucial step of refactoring.
 Refactoring involves restructuring the code to improve its design, readability, or performance. 
 The existing test suite acts as a safety net, ensuring that your changes don't introduce new bugs.
 
-- Refactor the add_numbers function in `my_module.py` for clarity or add new functionality.
+Refactor the add_numbers function in `my_module.py` for clarity or add new functionality.
 ```py
 # my_module.py
 
@@ -49,7 +49,8 @@ Here, you might decide to refactor the `add_numbers` function for better readabi
 The key is to make changes while keeping the existing functionality intact.
 
 ### 2. Run Tests After Refactoring
-After making changes, it's essential to run the test suite again to ensure that your refactoring did not introduce any new issues: `pytest`
+After making changes, it's essential to run the test suite again to ensure that your refactoring did not introduce any new issues. 
+Run: `pytest` in the terminal in your project directory.
 If all tests pass, it means your changes haven't negatively impacted the existing functionality. 
 If any test fails, it signals a regression, and you should revisit your refactoring and make necessary adjustments.
 

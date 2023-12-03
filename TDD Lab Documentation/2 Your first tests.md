@@ -20,7 +20,7 @@ def create_project_directory(project_name):
 ```
 
 ### 2. Write a Simple Test
-Inside your project directory, create a file named test_calculator.py
+Inside your project directory, create a file named `test_calculator.py`
 ```py
 # test_calculator.py
 
@@ -31,7 +31,7 @@ def test_addition():
     assert add_numbers(5, -2) == 3
 ```
 
-This is a simple test using the assert statement.
+This is a simple test using an assert statement.
 
 ### 3. Run the Test
 
