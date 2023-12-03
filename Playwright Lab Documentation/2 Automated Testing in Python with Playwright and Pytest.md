@@ -7,16 +7,13 @@
 In this tutorial, we'll explore how to perform automated testing in Python using Playwright and Pytest, a popular testing framework
 
 
-### Step 1: Install Playwright and Pytest
-Ensure you have Python installed on your system. Open a terminal and run the following commands:
-
-```
-pip install pytest-playwright
-```
+### Step 1: Install Pytest for Playwright
+Open a terminal and run the following command:
+`pip install pytest-playwright`
 
 
 ### Step 2: Setting up the Project Structure
-Create a folder for your project and a subfolder named `pytests`. Inside this folder create a Python file, e.g., `test_source_demo.py,` for your test scripts.
+Create a folder for your project and a subfolder named `pytests`. Inside this folder create a Python file with test at the beginning, e.g., `test_source_demo.py` for your test scripts.
 
 ### Step 3: Writing Your First Test
 
@@ -35,11 +32,11 @@ def test_title_validation(page):
     assert page.title() == "Swag Labs"
 ```
 
-This test checks if the title of the Saucedemo website is equal to `Swag Labs`.
+This test checks if the title of the Saucedemo website is "Swag Labs".
 
 ### Step 4: Running Your Tests
 
-In the terminal, run the following command to execute the test: `pytest test_source_demo.py`
+In the terminal, run the following command to execute the test: `pytest test_source_demo.py` (assuming you used the suggested name).
 
 By default, tests run in headless mode. To see the browser UI during execution, add the `--headed` option:
 `pytest test_source_demo.py --headed`
