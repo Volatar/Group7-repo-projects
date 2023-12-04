@@ -38,8 +38,8 @@ We need to install all the requirements to the virtual environment.
 
 In the lower left of the screen select the terminal.
 
-In the terminal, type or copy-paste the following:
-`pip install -r "Selenium Lab\Lab Documentation\requirements.txt"`
+In the terminal, with the root project folder selected, type or copy-paste the following:
+`pip install -r requirements.txt`
 
 Replace the backslashes with forward slashes (/) if you are on Linux.
 
