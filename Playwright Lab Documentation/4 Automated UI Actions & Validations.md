@@ -5,7 +5,7 @@ This section will talk about automating UI test scenarios with Playwright and Py
 The following code snippet is necessary to ensure the Asyncio library runs Playwright using Python:
 ```py
 import asyncio
-from playwright.async_api import async_playwright, except
+from playwright.async_api import async_playwright, expect
 ```
 
 ### 2. Check Boxes
@@ -19,27 +19,27 @@ Once all of these tasks have occurred, the browser is closed.
 #### 2.1 checkboxes.py
 ```py
 async def main():
-    
+
     async with async_playwright() as p:
-        
+
         browser = await p.chromium.launch(headless=False)
         context = await browser.new_context()
-        
-        await context.tracing.start(screenshots=True, snapshots=True, sources=True
+
+        await context.tracing.start(screenshots=True, snapshots=True, sources=True)
         page = await context.new_page()
         await page.set_viewport_size({"width": 1800, "height": 1200})
         await page.goto("https://demoqa.com/checkbox")
-        
+
         await page.check('label[for="tree-node-home"]')
         await page.screenshot(path="screenshots/checkboxes.png")
-        
+
         await page.is_checked('label[for="tree-node-home"]') is True
-        await expect(page.locator("#result")).to_have_text("You have selected :homedesktopnotescommandsdocumentsworks")
-        
-        await context.tracing.stop(path = "logs/trace.zip")
-        
+        await expect(page.locator("#result")).to_have_text("You have selected :homedesktopnotescommandsdocumentsworkspacereactangularveuofficepublicprivateclassifiedgeneraldownloadswordFileexcelFile")
+
+        await context.tracing.stop(path="logs/trace.zip")
+
         await browser.close()
-        
+
 asyncio.run(main())
 ```
 
@@ -60,33 +60,34 @@ async def main():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         context = await browser.new_context()
-        await context.tracing.start(screenshots=True, snapshots=True, sources=True
+        await context.tracing.start(screenshots=True, snapshots=True, sources=True)
         page = await context.new_page()
-        
+
         await page.set_viewport_size({"width": 1800, "height": 1200})
         await page.goto("https://demoqa.com/buttons")
-        
+
         # Generic Click - Dynamic Selector
         button = page.locator("text=click Me").nth(2)
+        await button.click()
         await page.screenshot(path="screenshots/dynamicClick.png")
-        
+
         # Assertions
-        await expect(page.locator("#dynamicClickMessage")).to_have_text("You have a dynamic click")
-        
+        await expect(page.locator("#dynamicClickMessage")).to_have_text("You have done a dynamic click")
+
         # Double Click
-        button = page.location("text=Click Me).nth(0)
+        button = page.locator("text=Click Me").nth(0)
         await button.dblclick()
         await page.screenshot(path="screenshots/doubleClick.png")
-        
+
         # Assertions
-        await expect(page.locator("#doubleClickMessage")).to_have_text("You have a double click")
-        
-        # Stoping Tracing
-        await context.tracing.stop(path = "logs/trace.zip")
-        
-        # Closing broswer 
+        await expect(page.locator("#doubleClickMessage")).to_have_text("You have done a double click")
+
+        # Stopping Tracing
+        await context.tracing.stop(path="logs/trace.zip")
+
+        # Closing browser
         await browser.close()
-		
+
 asyncio.run(main())
 ```
 
@@ -131,29 +132,29 @@ An assertion is made and a log file is formed before the browser closes.
 #### 5.1 radio-button.py
 ```py
 async def main():
-	
+
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=False)
         context = await browser.new_context()
-        await context.tracing.start(screenshots=True, snapshots=True, sources=True
+        await context.tracing.start(screenshots=True, snapshots=True, sources=True)
         page = await context.new_page()
         await page.set_viewport_size({"width": 1800, "height": 1200})
-        await page.goto("https://demoqa.com/radioButton.png")
-        
+        await page.goto("https://demoqa.com/radio-button")
+
         # Actions
         await page.check("#yesRadio", force=True)
         await page.screenshot(path="screenshots/radioButton.png")
-        
+
         # Assertions
         await page.is_checked("#yesRadio") is True
         await expect(page.locator(".text-success")).to_have_text("Yes")
-        
-        # Stoping Tracing
-        await context.tracing.stop(path = "logs/trace.zip")
-        
-        # Closing broswer 
+
+        # Stopping Tracing
+        await context.tracing.stop(path="logs/trace.zip")
+
+        # Closing browser
         await browser.close()
-        
+
 asyncio.run(main())
 ```
 
