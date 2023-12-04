@@ -23,13 +23,18 @@ The fixture becomes coped into the session, making an API request context and se
 # Import necessary modules and classes
 from typing import Generator
 import pytest
-from playwright.sync_api import Playwright, api_request_context
+from playwright.sync_api import Playwright, Page, APIRequestContext, expect
 
 # Define PyTest fixture for API request context
 @pytest.fixture(scope="session")
-def api_request_context() -> Generator:
-    with api_request_context() as context:
-    yield context
+def api_request_context(
+        playwright: Playwright,
+) -> Generator[APIRequestContext, None, None]:
+    request_context = playwright.request.new_context(
+        base_url="https://localhost:3000"
+    )
+    yield request_context
+    request_context.dispose()
 ```
 
 ### 3. Performing API Testing with PyTest
@@ -44,28 +49,32 @@ Once the response is validated for success, the response details and JSON conten
 # Import necessary modules and classes
 from typing import Generator
 import pytest
-from playwright.sync_api import Playwright, api_request_context
+from playwright.sync_api import Playwright, Page, APIRequestContext, expect
 
-# PyTest fixture for API request context
+# Define PyTest fixture for API request context
 @pytest.fixture(scope="session")
-def api_request_context() -> Generator:
-    with api_request_context() as context:
-    yield context
+def api_request_context(
+        playwright: Playwright,
+) -> Generator[APIRequestContext, None, None]:
+    request_context = playwright.request.new_context(
+        base_url="https://localhost:3000"
+    )
+    yield request_context
+    request_context.dispose()
 
 # PyTest test function for API testing
-def test_post_todo(api_request_context):
-# Define API endpoint and payload
-endpoint = "/todos"
-payload = {"completed": True, "id": 1, "title": "Make a new    video"}
+def test_post_todo(api_request_context: APIRequestContext) -> None:
+    # Define API endpoint and payload
+    endpoint = f"/todos"
+    payload = {"completed": True, "title": "Make a new video", "id": "1"}
+    # Send POST request
+    response = api_request_context.post(endpoint, data=payload)
 
-# Send POST request
-response = api_request_context.post(endpoint, json=payload)
+    # Validate response
+    assert response.ok
 
-# Validate response
-assert response.ok
-
-# Print response details
-print("Response JSON:", response.json())
+    # Print response details
+    print("Response JSON:", response.json())
 ```
 
 ### 4. Running the Tests
@@ -81,28 +90,32 @@ The response is validated, and the details are printed. `main` contains and mana
 #### 5.1 Code Example: Asyncio Approach for API Testing
 ```py
 import asyncio
-from playwright.async_api import async_playwright,             async_api_request_context
+from playwright.async_api import async_playwright, Playwright
+
 
 # Asyncio function for API testing
-async def run(playwright):
-    async with async_api_request_context() as context:
-        # Define API endpoint and payload
-        endpoint = "/todos"
-        payload = {"completed": True, "id": 1, "title": "Make a new video"}
-
-        # Send POST request
-    response = await context.post(endpoint, json=payload)
-
-        # Validate response
+async def run(playwright: Playwright):
+    api_request_context = await playwright.request.new_context(base_url="http://localhost:3000")
+    
+    # Define API endpoint and payload
+    endpoint = "/todos"
+    payload = {"completed": True, "id": 1, "title": "Make a new video"}
+    
+    # Send POST request
+    response = await api_request_context.post(endpoint, data=payload)
+    
+    # Validate response
     assert response.ok
-        
-        # Print response details
+
+    # Print response details
     print("Response JSON:", response.json())
+
 
 # Main function to run Asyncio
 async def main():
-    async with async_playwright() as p:
-        await run(p)
+    async with async_playwright() as playwright:
+        await run(playwright)
+        
 # Run Asyncio
 asyncio.run(main())
 ```
