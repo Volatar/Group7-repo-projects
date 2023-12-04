@@ -43,7 +43,7 @@ Click `Create` to create the project.
 
 ## Step 3: Download Selenium Drivers for Browsers
 Refer to Selenium Lab `Selenium Lab/Lab Documentation/7. WebDriverDownloadSteps.md` for reference. 
-[This can be found on the web here.](https://github.com/Volatar/Group7-repo-projects/blob/bdd/Selenium%20Lab/Lab%20Documentation/7.%20WebDriverDownloadSteps.md)
+This can be found on the web [here.](https://github.com/Volatar/Group7-repo-projects/blob/bdd/Selenium%20Lab/Lab%20Documentation/7.%20WebDriverDownloadSteps.md)
 
 ## Step 4: Create a Feature File
 Right-click on your project folder in the `Project` pane on the left side of the PyCharm window.
